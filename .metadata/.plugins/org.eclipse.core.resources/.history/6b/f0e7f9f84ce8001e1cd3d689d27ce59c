@@ -1,0 +1,20 @@
+
+data types - categories
+-----------------------
+	1. primitive data types
+	2. non-primitive/ derived data types
+	
+1.primitive data types
+----------------------
+	- 8 primitive data types
+		byte
+		short
+		int 
+		long
+		float
+		double
+		boolean
+		char
+	- these primitive datatypes starts with small letter
+	- these primitive datatypes are not objects
+		

@@ -1,0 +1,15 @@
+package javabasics;
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+		
+		byte myByte = 10;
+		short myShort = 20;
+		int myInt = 30;
+		long myLong = 80;
+		
+		
+	}
+
+}
