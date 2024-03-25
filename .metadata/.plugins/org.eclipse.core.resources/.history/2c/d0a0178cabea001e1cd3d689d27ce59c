@@ -1,0 +1,23 @@
+package javabasics;
+
+public class OperatorsDemo {
+
+	public static void main(String[] args) {
+		// DEMO FOR % and / 
+		int num1 = 20;
+		int num2 = 3;
+		int result1 = num1 % num2;
+		int result2 = num1 / num2;
+		double result3 = (double)num1 / (double)num2;
+		System.out.println("20 % 3 = " + result1);
+		System.out.println("20 / 3 = " + result2);
+		System.out.println("20 / 3 = " + result3);
+		
+		System.out.println("----------------------");
+		// DEMO FOR *=
+		int num5 = 20;
+		num5 *= 5;
+		System.out.println("num5 += 5 is: " + num5);
+	}
+
+}

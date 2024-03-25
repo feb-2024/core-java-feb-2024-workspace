@@ -36,3 +36,404 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2024-03-25 18:45:12.836
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:783)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:190)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:147)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:127)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2024-03-25 18:56:45.066
+!MESSAGE File support discovery for notes failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:106)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	... 12 more
+	Suppressed: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: Marketplace service is temporarily unavailable.  Please try again later.
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleServiceUnavailable(TransportFactory.java:460)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleStreamExceptions(TransportFactory.java:442)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:423)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+		... 13 more
+	Caused by: org.eclipse.core.runtime.CoreException: HTTP Server 'Service Unavailable': https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:220)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		... 15 more
+	Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 503.
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:622)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:887)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:148)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:456)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:294)
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:211)
+		... 22 more
+Caused by: org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 14 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2024-03-25 18:56:45.096
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28: status code: 503, reason phrase: Service Unavailable
+!STACK 1
+org.eclipse.epp.mpc.core.service.ServiceUnavailableException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:106)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: Marketplace service is temporarily unavailable.  Please try again later.
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleServiceUnavailable(TransportFactory.java:460)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleStreamExceptions(TransportFactory.java:442)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:423)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+		... 13 more
+	Caused by: org.eclipse.core.runtime.CoreException: HTTP Server 'Service Unavailable': https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:220)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		... 15 more
+	Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 503.
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:622)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:887)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:148)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:456)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:294)
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:211)
+		... 22 more
+Caused by: org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 14 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2024-03-25 18:56:45.097
+!MESSAGE status code: 503, reason phrase: Service Unavailable
+!STACK 0
+org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2024-03-25 19:25:46.325
+!MESSAGE File support discovery for notes failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:106)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	... 12 more
+	Suppressed: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: Marketplace service is temporarily unavailable.  Please try again later.
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleServiceUnavailable(TransportFactory.java:460)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleStreamExceptions(TransportFactory.java:442)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:423)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+		... 13 more
+	Caused by: org.eclipse.core.runtime.CoreException: HTTP Server 'Service Unavailable': https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:220)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		... 15 more
+	Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 503.
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:622)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:887)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:148)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:456)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:294)
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:211)
+		... 22 more
+Caused by: org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 14 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2024-03-25 19:25:46.345
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28: status code: 503, reason phrase: Service Unavailable
+!STACK 1
+org.eclipse.epp.mpc.core.service.ServiceUnavailableException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:106)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: Marketplace service is temporarily unavailable.  Please try again later.
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleServiceUnavailable(TransportFactory.java:460)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleStreamExceptions(TransportFactory.java:442)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:423)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+		... 13 more
+	Caused by: org.eclipse.core.runtime.CoreException: HTTP Server 'Service Unavailable': https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:220)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		... 15 more
+	Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 503.
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:622)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:887)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:148)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:456)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:294)
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:211)
+		... 22 more
+Caused by: org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 14 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2024-03-25 19:25:46.346
+!MESSAGE status code: 503, reason phrase: Service Unavailable
+!STACK 0
+org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2024-03-25 19:33:51.109
+!MESSAGE File support discovery for notes failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:106)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	... 12 more
+	Suppressed: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: Marketplace service is temporarily unavailable.  Please try again later.
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleServiceUnavailable(TransportFactory.java:460)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleStreamExceptions(TransportFactory.java:442)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:423)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+		... 13 more
+	Caused by: org.eclipse.core.runtime.CoreException: HTTP Server 'Service Unavailable': https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:220)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		... 15 more
+	Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 503.
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:622)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:887)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:148)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:456)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:294)
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:211)
+		... 22 more
+Caused by: org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 14 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2024-03-25 19:33:51.121
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28: status code: 503, reason phrase: Service Unavailable
+!STACK 1
+org.eclipse.epp.mpc.core.service.ServiceUnavailableException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:106)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: org.eclipse.epp.mpc.core.service.ServiceUnavailableException: Marketplace service is temporarily unavailable.  Please try again later.
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleServiceUnavailable(TransportFactory.java:460)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.handleStreamExceptions(TransportFactory.java:442)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:423)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+		... 13 more
+	Caused by: org.eclipse.core.runtime.CoreException: HTTP Server 'Service Unavailable': https://marketplace.eclipse.org/category/free-tagging/fileExtension_notes/api/p?client=org.eclipse.epp.mpc.core&os=win32&platform.version=4.28
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:220)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		... 15 more
+	Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 503.
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:622)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:887)
+		at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:148)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:456)
+		at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:294)
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:211)
+		... 22 more
+Caused by: org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 14 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2024-03-25 19:33:51.123
+!MESSAGE status code: 503, reason phrase: Service Unavailable
+!STACK 0
+org.apache.hc.client5.http.HttpResponseException: status code: 503, reason phrase: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:128)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:501)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:528)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$1(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:331)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:312)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:318)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:85)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

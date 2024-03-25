@@ -1,0 +1,62 @@
+22/03/2024
+----------
+
+data types - categories
+-----------------------
+	1. primitive data types
+	2. non-primitive/ derived data types
+	
+1. primitive data types
+----------------------
+	- 8 primitive data types
+		
+		integers
+		--------
+		byte - 1 byte
+		short - 2 bytes
+		int - 4 bytes
+		long - 8 bytes
+		
+		decimal numbers
+		---------------
+		float
+		double
+		
+		boolean - true / false
+		
+		char
+		
+	- these primitive datatypes starts with small letter
+	- these primitive datatypes are not objects
+	
+2. non-primitive/derived data types
+-----------------------------------
+	- arrays, classes, interfaces, enum
+	- these are called derived data types because they are derived from the primitive data types 	
+	
+	
+literals - fixed values
+ 
+type casting
+------------
+	1. implicit casting
+	2. explicit casting
+	
+connection between int and char
+
+25/03/2024
+----------
+1. diff between System.out.print() and System.out.println()
+	- System.out.print() - prints the output and cursor remains in the same line
+	- System.out.println() - prints the output and cursor moves to a new line
+	- Do we have System.out.printf() in java?
+	
+2. what is keyword, identifier and literal?
+	keyword - Keywords are reserved words and these are predefined in Java which cannot be used as identifiers
+	identifier - sequence of characters to identify something in program. 
+			   - Eg: variable names, class names, package names, interface names, method names 
+	literal - fixed values
+	
+3. Operators in Java
+
+
