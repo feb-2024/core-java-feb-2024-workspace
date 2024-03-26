@@ -87,9 +87,7 @@ connection between int and char
 			System.out.println()
 		
 	- input from user
-		- Scanner class which is in util package
-		- Scanner is a utility class given to us by java
-		- Scanner class uses the classes in java.io package to get input from the user
+		- Scanner class
 	
 	- how to get the primitive data types as input from the user?
 		- scan.nextByte() 

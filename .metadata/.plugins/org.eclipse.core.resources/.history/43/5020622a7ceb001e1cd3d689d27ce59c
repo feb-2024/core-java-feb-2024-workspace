@@ -87,9 +87,7 @@ connection between int and char
 			System.out.println()
 		
 	- input from user
-		- Scanner class which is in util package
-		- Scanner is a utility class given to us by java
-		- Scanner class uses the classes in java.io package to get input from the user
+		- Scanner class
 	
 	- how to get the primitive data types as input from the user?
 		- scan.nextByte() 
@@ -101,8 +99,8 @@ connection between int and char
 		- scan.nextBoolean()
 		- how do we get a char as input using Scanner?
 		
-		- scan.next() - used for string input
-		- scan.nextLine() - used for string input
+		- scan.next()
+		- scan.nextLine()
 		
 		- we know next() and nextLine() is used to scan String input. What is the difference between next() and nextLine()? 
 		
