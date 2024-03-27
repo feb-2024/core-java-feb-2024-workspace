@@ -157,6 +157,4 @@ java 16
 -------
 	- pattern matching of instanceof
 	- Records
-java 17
--------
-	- Sealed classes
+	- 

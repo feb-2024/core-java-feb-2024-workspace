@@ -1,0 +1,26 @@
+package javabasics;
+
+public class IfDemo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		// simple if
+		// if(condn){
+		//		true part
+		// }
+		
+		
+		
+		
+		// if...else
+		
+		
+		// else if ladder
+		
+		
+		// nested if
+
+	}
+
+}

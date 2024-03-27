@@ -1,0 +1,37 @@
+package javabasics;
+
+import java.util.Scanner;
+
+public class IfDemo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter age:");
+		int age = scan.nextInt();
+		
+		// simple if
+		// if(condn){
+		//		true part
+		// }
+		System.out.println("simple if demo...");
+		if(age < 18) {
+			System.out.println("You are a minor!");
+		}
+		System.out.println("Welcome! Proceed Further!");
+		System.out.println("-------------------");
+		
+		// if...else
+		// if(condn){
+		//		true part
+		// } else {
+		//  	false part
+		// }
+		
+		// else if ladder
+		
+		
+		// nested if
+
+	}
+
+}
