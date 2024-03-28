@@ -16,6 +16,7 @@ public class SwitchDemo {
 			case "Tuesday":
 			case "Wednesday":
 			case "Thursday":
+			//case "Monday":
 			case "Friday":
 				System.out.println(day + " is a weekday");
 				break;
@@ -28,6 +29,27 @@ public class SwitchDemo {
 		}
 		System.out.println("Have a Good Day!");
 
+//		long num = 5;
+//		
+//		 switch (num) {
+//	     case 4 -> System.out.println("4");
+//	     case 5 -> System.out.println("5");
+//	     default -> throw new ClassCastException("can not accept");
+
+		switch(day) {
+		
+     }
+
+//		 double a=1.33D;
+//         switch(a){
+//         default:
+//             a%=a;
+//         case 1.333:
+//             a++;break;
+//         case 1.3:
+//             a+=a;break;
+//         }
+//         System.out.print(a);
 	}
 
 }

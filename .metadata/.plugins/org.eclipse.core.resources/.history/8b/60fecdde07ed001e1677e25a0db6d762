@@ -1,0 +1,55 @@
+package javabasics;
+
+import java.util.Scanner;
+
+public class LoopDemo {
+
+	public static void main(String[] args) {
+		
+		// while loop
+//		int i = 0; // initial value
+//		while(i < 20) { //condition
+//			System.out.println("Hello Everyone!!"); // task to be executed multiple time
+//			i++;// expression
+//		}
+//		System.out.println("Loop over...");
+//		System.out.println("---------------");
+		
+		Scanner scan = new Scanner(System.in);
+		
+		
+		// program to print the number 5, N times - use while loop
+		
+//		System.out.println("Enter the times: ");
+//		int times = scan.nextInt();
+//		
+//		int j = 0; // intial value
+//		while(j<times) { // condn
+//			System.out.println(5);// task
+//			j++; // exp
+//		}
+//		System.out.println("---------------");
+		
+		// program to print numbers from 1 to N - use do...while loop
+//		System.out.println("Enter the number: ");
+//		int num1 = scan.nextInt();
+//		int k=1; // initial value
+//		do{
+//		    System.out.println(k);
+//		    k++; // exp
+//		}while(k<=num1); // condition
+		
+		// program to find the sum of first N numbers - use for loop
+		System.out.println("Enter the number: ");
+		int num2 = scan.nextInt();
+		
+		int sum=0;
+		int i2=1;
+		for(i2=1;i2<=num2;i2++){
+		    sum+=i2;
+		}
+		System.out.println(sum);
+		
+	}
+
+}

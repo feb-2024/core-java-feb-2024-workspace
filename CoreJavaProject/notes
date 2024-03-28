@@ -122,6 +122,15 @@ Decision making statements
 		- nested if
 		
 	- switch statements
+		- In Java, switch works only with 4 primitives and their wrappers, as well as with the enum type and String class.
+		This is
+
+			byte — Byte
+			short — Short
+			char — Character
+			int — Integer
+			Enum
+			String
 
 some of the important java features from java 8 to java 17
 ----------------------------------------------------------
@@ -160,3 +169,29 @@ java 16
 java 17
 -------
 	- Sealed classes
+
+28/03/2024
+----------
+Looping statements in java
+--------------------------
+	- used when we want to perform a task multiple times
+	- when working with loops be careful not to write an infinite loop
+	- every time when the loop runs, we have to make sure that we are getting one step closer to ending the loop.
+	- for a loop to run what do we need?
+		- initial value : intial value on which the loop starts
+		- condition : condition to enter the loop
+		- expression (mostly inc/dec) : this expression will help us to get one step closer to the condition becoming false
+
+	- generally to run a loop we use a variable and we call this as running variable
+	- sometimes we may use the running variable in the repeated task that we want to perform 
+	- while loop
+		- is an entry control loop
+	- do...while loop
+		- is a exit control loop
+		- the body of the loop will definetly execute once
+	- for loop
+		- here the initial value, condn and exp is given in the same line
+		- it is convenient
+		- is for loop an entry control or exit control loop?  - for loop is a entry control loop
+		
+
