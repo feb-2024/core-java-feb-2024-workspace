@@ -93,9 +93,7 @@ public class LoopDemo {
 		    	break;
 		   }
 		}
-		if(num6 == 1) {
-			System.out.println(num6 + " is neither prime nor composite number");
-		}else if(isPrime) {
+		if(isPrime) {
 			System.out.println(num6 + " is a prime number");
 		}else {
 			System.out.println(num6 + " is not a prime number");
