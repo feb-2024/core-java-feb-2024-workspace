@@ -1,0 +1,71 @@
+package javabasics;
+
+import java.util.Scanner;
+
+public class PatternLoopDemo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num = scan.nextInt();
+		
+		
+		// 1 2 3 4...
+		for(int i1=1;i1<=num;i1++) {
+			System.out.print(i1 + "  ");
+		}
+		
+		System.out.println("\n--------------------");
+		
+		// 1 2 3 4
+		// 1 2 3 4
+		// 1 2 3 4
+		// 1 2 3 4...
+		for(int i2=1;i2<=num;i2++) {
+			for(int j2=1;j2<=num;j2++) {
+				System.out.print(j2 + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("\n--------------------");
+		
+		// 1 1 1 1
+		// 2 2 2 2
+		// 3 3 3 3
+		// 4 4 4 4
+		for(int i2=1;i2<=num;i2++) {
+			for(int j2=1;j2<=num;j2++) {
+				System.out.print(i2 + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("\n--------------------");
+		
+		// 1
+		// 1 2
+		// 1 2 3
+		// 1 2 3 4
+		for(int i2=1;i2<=num;i2++) {
+			for(int j2=1;j2<=i2;j2++) {
+				System.out.print(j2 + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("\n--------------------");
+		
+		// 1
+		// 2 2
+		// 3 3 3
+		// 4 4 4 4
+		for(int i2=1;i2<=num;i2++) {
+			for(int j2=1;j2<=i2;j2++) {
+				System.out.print(i2 + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("\n--------------------");
+		
+		
+	}
+
+}

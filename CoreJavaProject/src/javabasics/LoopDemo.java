@@ -84,22 +84,31 @@ public class LoopDemo {
 //		System.out.println(fact);
 		
 		// check whether a number is prime or not
-		System.out.println("Enter the number: ");
-		int num6 = scan.nextInt();
-		boolean isPrime = true;
-		for(int i=2;i<num6;i++){
-		    if(num6%i==0){
-		    	isPrime = false;
-		    	break;
-		   }
-		}
-		if(num6 == 1) {
-			System.out.println(num6 + " is neither prime nor composite number");
-		}else if(isPrime) {
-			System.out.println(num6 + " is a prime number");
-		}else {
-			System.out.println(num6 + " is not a prime number");
-		}
+//		System.out.println("Enter the number: ");
+//		int num6 = scan.nextInt();
+//		boolean isPrime = true;
+//		for(int i=2;i<num6;i++){
+//		    if(num6%i==0){
+//		    	isPrime = false;
+//		    	break;
+//		   }
+//		}
+//		if(num6 == 1) {
+//			System.out.println(num6 + " is neither prime nor composite number");
+//		}else if(isPrime) {
+//			System.out.println(num6 + " is a prime number");
+//		}else {
+//			System.out.println(num6 + " is not a prime number");
+//		}
+		
+//		while(false){
+//	        System.out.println("cppbuzz");
+//		}
+		
+		while(true){
+		       System.out.println("cppbuzz");
+		     break;
+		    }
 	}
 
 }

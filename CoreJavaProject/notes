@@ -194,4 +194,7 @@ Looping statements in java
 		- it is convenient
 		- is for loop an entry control or exit control loop?  - for loop is a entry control loop
 		
-
+29/03/2024
+-----------
+	- patterns in java using nested for loops
+	- available in PatternLoopDemo.java
