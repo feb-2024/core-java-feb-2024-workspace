@@ -208,15 +208,9 @@ Looping statements in java
 		- method definition
 		- method invocation
 		- method signature
-			- can have methods with
-				- no return type and no arguments
-				- no return type and have arguments
-				- with return type and no arguments
-				- with return type and have arguments
 	- working with methods involves 2 steps
 		1. method definition
 			- here we specify the method signature along with the method body
 			- by writing the definition of the method , the method body does not get executed
 		2. method invocation	
-			- in order for the body of the method to execute, we should call the method
 	

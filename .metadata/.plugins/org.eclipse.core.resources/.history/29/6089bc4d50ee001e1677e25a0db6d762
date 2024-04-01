@@ -139,7 +139,12 @@ public class PatternLoopDemo {
 			System.out.println();
 		}
 		System.out.println("\n--------------------");
-	
+		int x = 10;
+		int y = 20;
+		
+		if(x+y>20) {
+			
+		}
 		
 	}
 

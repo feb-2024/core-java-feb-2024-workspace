@@ -139,7 +139,6 @@ public class PatternLoopDemo {
 			System.out.println();
 		}
 		System.out.println("\n--------------------");
-	
 		
 	}
 

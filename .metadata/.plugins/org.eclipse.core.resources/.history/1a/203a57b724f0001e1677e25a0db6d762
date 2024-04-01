@@ -1,0 +1,18 @@
+package javabasics;
+
+import java.time.LocalTime;
+
+public class MethodsDemo {
+
+	// here this method will greet based on system time
+	void greet() {
+		LocalTime nowTime = LocalTime.now(); // this line will obtain the system time
+		System.out.println(nowTime.getHour());
+	}
+	
+	public static void main(String[] args) {
+		
+		greet();// method invocation
+	}
+
+}

@@ -1,0 +1,60 @@
+package javabasics;
+
+import java.time.LocalTime;
+import java.util.Scanner;
+
+public class MethodsDemo {
+
+	// here this method will greet based on system time
+	// method definition
+	public static void greet() {
+		LocalTime nowTime = LocalTime.now(); // this line will obtain the system time
+		int hour = nowTime.getHour();
+		if(hour >= 6 && hour < 12) {
+			System.out.println("Good Morning!!");
+		}else if(hour >= 12 && hour < 17) {
+			System.out.println("Good Afternoon!!");
+		}else if(hour >= 17 && hour < 21) {
+			System.out.println("Good Evening!!");
+		}else {
+			System.out.println("Good Night!!");
+		}
+
+	}
+	// logic to find base to a power
+	public static int computeBasePower(int baseNumber, int powerNumber) {
+		// lets write the logic here
+		// java does not support **
+		// int output = (int)Math.pow(baseNumber, powerNumber);
+		int output = 1;
+		for(int i=0;i<powerNumber;i++) {
+			output *= baseNumber;
+		}
+		return output;
+	}
+	
+	public static void main(String[] args) {
+		// any program will have input, process/logic/bussiness logic, output
+		// now we will segregate the input, logic and output
+		// keep the input and output here in main method
+		// move the logic to a seperate method
+		greet();// method invocation
+		
+		//input
+		System.out.println("TO COMPUTE ");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the base number:");
+		int base = scan.nextInt();
+		System.out.println("Enter the power number:");
+		int power = scan.nextInt();
+		
+		//process - the process should be in a seperate method
+		// method invocation
+		int answer = computeBasePower(base, power);
+		
+		//output
+		System.out.println(base + " to the power of " + power + " is " + answer);
+		
+	}
+
+}
