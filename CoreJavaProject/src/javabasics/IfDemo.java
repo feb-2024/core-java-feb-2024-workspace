@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class IfDemo {
 
-	public static void main(String[] args) {
+	static public void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter age:");
 		int age = scan.nextInt();
@@ -63,6 +63,7 @@ public class IfDemo {
 		}
 		System.out.println("Welcome! Proceed Further!");
 		System.out.println("-------------------");
+		
 	}
 
 }

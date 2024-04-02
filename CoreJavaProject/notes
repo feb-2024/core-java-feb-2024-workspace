@@ -220,3 +220,8 @@ Looping statements in java
 		2. method invocation	
 			- in order for the body of the method to execute, we should call the method
 	
+02/04/2-24
+-----------
+	- command line arguments
+		- these are argument sent to the main method at the time of running the program
+		- these argument could be values needed for the main method to intialize resources

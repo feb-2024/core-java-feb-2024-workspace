@@ -1,0 +1,55 @@
+package javabasics;
+
+import java.util.Scanner;
+
+public class TwoDShapesDemo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("************************");
+		System.out.println("2D SHAPES");
+		System.out.println("************************");
+		System.out.println("1. Rectangle");
+		System.out.println("2. Circle");
+		System.out.println("3. Triangle");
+		System.out.println("************************");
+		System.out.println("Please choose an option:");
+		int option = scan.nextInt();
+		System.out.println("************************");		
+		switch(option) {
+			case 1:
+				System.out.println("You have selected Rectangle...");
+				System.out.println("Enter length: ");
+				double length = scan.nextDouble();
+				
+				System.out.println("Enter width: ");
+				double width = scan.nextDouble();
+		
+				double areaAnswer = TwoDShapes.computeAreaRectangle(length, width);
+				double perimeterAnswer = TwoDShapes.computePerimeterRectangle(length, width);
+				
+				System.out.println("Area of rectangle with length " + length + " and width " + width + " is " + areaAnswer + " sq. units");
+				System.out.println("Perimeter of rectangle with length " + length + " and width " + width + " is " + perimeterAnswer + " units");
+				
+				break;
+			case 2:
+				System.out.println("You have selected Circle...");
+				System.out.println("Enter radius: ");
+				double radius = scan.nextDouble();
+				
+				double areaCircle = TwoDShapes.computeAreaCircle(radius);
+				double perimeterCircle = TwoDShapes.computePerimeterCircle(radius);
+				
+			case 3:
+				
+			default:
+				System.out.println("************************");
+				System.out.println("Please choose a valid option!");
+				System.out.println("************************");
+		}
+		
+		
+	}
+
+}

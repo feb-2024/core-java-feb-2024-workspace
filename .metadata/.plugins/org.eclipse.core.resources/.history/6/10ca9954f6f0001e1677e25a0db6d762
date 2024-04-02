@@ -1,0 +1,41 @@
+package javabasics;
+
+import java.util.Scanner;
+
+public class TwoDShapesDemo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("************************");
+		System.out.println("2D SHAPES");
+		System.out.println("************************");
+		System.out.println("1. Rectangle");
+		System.out.println("2. Circle");
+		System.out.println("3. Triangle");
+		System.out.println("************************");
+		int option = scan.nextInt();
+		
+		switch(option) {
+			case 1:
+				System.out.println("You have selected Rectangle...");
+				System.out.println("Enter length: ");
+				double length = scan.nextDouble();
+				
+				System.out.println("Enter width: ");
+				double width = scan.nextDouble();
+		
+				
+				System.out.println("Area of rectangle with length " + length + " and width " + width + " is ");
+			case 2:
+				
+			case 3:
+				
+			default:
+			
+		}
+		
+		
+	}
+
+}

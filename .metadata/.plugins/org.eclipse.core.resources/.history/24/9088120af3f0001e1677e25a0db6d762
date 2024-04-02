@@ -1,0 +1,15 @@
+package javabasics;
+
+public class TwoDShapes {
+	static double PI = 3.14;
+	
+	public static double computeAreaRectangle(double length, double width) {
+		double area = length * width;
+		return area;
+	}
+	
+	public static double computeAreaCircle(double radius) {
+		double area = PI * radius * radius;
+		return area;
+	}
+}

@@ -1,0 +1,8 @@
+package javabasics;
+
+public class TwoDShapes {
+	public static double computeAreaRectangle(double length, double width) {
+		double area = length * width;
+		return area;
+	}
+}
