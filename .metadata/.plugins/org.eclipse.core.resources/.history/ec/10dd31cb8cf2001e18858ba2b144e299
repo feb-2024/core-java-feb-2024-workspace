@@ -341,12 +341,6 @@ Looping statements in java
 					String is null
 
 04/04/2024
------------		
-	- objects in java : create an object of Room class and accessed its members
-	- stack and heap memory
-	- local variable and instance variable memory allocations
-	- local variable and instance variable default values
-	- memory when methods are invoked
-	- garbage collector
-	- create multiple objects for Room
-	
+-----------
+				
+	- objects in java

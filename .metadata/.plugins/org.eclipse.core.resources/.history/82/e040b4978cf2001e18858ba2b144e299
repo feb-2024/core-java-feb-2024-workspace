@@ -327,26 +327,4 @@ Looping statements in java
 			    public static void main(String[] args) {
 			    }
 			}
-		- memory structure
-			stack memory
-				- local variables will take memory in stack
-				- a local variable if not initialized will hold garbage value
-			heap memory
-				- instance variables/data members take memory in heap 
-				- an instance variable if not initialized will hold default values
-					byte, short, int, long is 0
-					float, double is 0.0
-					boolean is false
-					char is '\o'
-					String is null
-
-04/04/2024
------------		
-	- objects in java : create an object of Room class and accessed its members
-	- stack and heap memory
-	- local variable and instance variable memory allocations
-	- local variable and instance variable default values
-	- memory when methods are invoked
-	- garbage collector
-	- create multiple objects for Room
-	
+	- objects in java
