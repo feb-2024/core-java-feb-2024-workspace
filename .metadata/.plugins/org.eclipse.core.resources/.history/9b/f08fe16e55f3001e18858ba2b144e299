@@ -15,16 +15,10 @@ public class Room {
 	}
 	
 	public Room(int length, int width, int height, String roomColor) {
-		this(length, width, height);
-//		this.length = length;
-//		this.width = width;
-//		this.height = height;
+		this.length = length;
+		this.width = width;
+		this.height = height;
 		this.roomColor = roomColor;
-	}
-	
-	public Room(int length, int width, int height, String roomColor, int roomNo) {
-		this(length, width, height, roomColor);
-		this.roomNumber = roomNumber;
 	}
 	
 	int calculateFloorArea() {

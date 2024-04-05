@@ -370,7 +370,5 @@ Looping statements in java
 				- the type of arguments are different
 				- the order of arguments
 		- constructor chaining
-			- we can call one constructor from another constructor within the class
-			- this is achieved by this()
-			
+		
 	- destructors in java	

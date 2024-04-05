@@ -23,7 +23,12 @@ public class Room {
 	}
 	
 	public Room(int length, int width, int height, String roomColor, int roomNo) {
-		this(length, width, height, roomColor);
+		this(length, width, height);
+//		this.length = length;
+//		this.width = width;
+//		this.height = height;
+		
+		this.roomColor = roomColor;
 		this.roomNumber = roomNumber;
 	}
 	

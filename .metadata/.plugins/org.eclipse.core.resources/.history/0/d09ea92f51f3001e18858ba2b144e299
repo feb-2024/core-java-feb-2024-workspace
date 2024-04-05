@@ -23,21 +23,13 @@ public class RoomDemo {
 		int cost = studyRoom.calculateWallPaintingCost(2);
 		System.out.println("Cost of painting studyRoom walls : Rs." + cost);
 		
-		Room diningRoom = new Room(400, 200, 150);
-//		diningRoom.length = 400;
-//		diningRoom.width = 200;
-//		diningRoom.height = 150;
+		Room diningRoom = new Room();
+		diningRoom.length = 400;
+		diningRoom.width = 200;
+		diningRoom.height = 150;
 		
 		System.out.println("Floor area of diningRoom is : " + diningRoom.calculateFloorArea() + " units ");
 		System.out.println("Cost of painting diningRoom walls : Rs." + diningRoom.calculateWallPaintingCost(3));
-		
-		Room livingRoom = new Room(500, 250, 150, "lightpink");
-		System.out.println("Floor area of livingRoom is : " + livingRoom.calculateFloorArea() + " units ");
-		System.out.println("Cost of painting livingRoom walls : Rs." + livingRoom.calculateWallPaintingCost(1));
-		
-		Room bedRoom = new Room(250, 200, 150, "lightblue", 101);
-		System.out.println("Floor area of bedRoom is : " + bedRoom.calculateFloorArea() + " units ");
-		System.out.println("Cost of painting bedRoom walls : Rs." + bedRoom.calculateWallPaintingCost(1));
 		
 	}
 
