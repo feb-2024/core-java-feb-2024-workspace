@@ -44,6 +44,4 @@ public class Room {
 		int wallArea = (2 * height * (width + length));
 		return wallArea;
 	}
-	
-	
 }

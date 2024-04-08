@@ -1,0 +1,12 @@
+package classesandobjects;
+
+public class FordDemo {
+
+	public static void main(String[] args) {
+		FordFigo figo1 = new FordFigo("FIGO", "silver");
+		System.out.println(figo1.switchOn());
+		System.out.println(figo1.accelerate());
+		System.out.println(figo1.applyBrake());
+		System.out.println(figo1.switchOff());
+	}
+}

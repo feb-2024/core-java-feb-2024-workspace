@@ -1,0 +1,13 @@
+package classesandobjects;
+
+public class FordFigoTitanium extends FordFigo{
+	int noOfAirbags;
+
+	public FordFigoTitanium(String modelName, String color, int noOfAirbags) {
+		this.modelName = modelName;
+		this.color = color;
+		this.noOfAirbags = noOfAirbags;
+	}
+	
+	
+}
