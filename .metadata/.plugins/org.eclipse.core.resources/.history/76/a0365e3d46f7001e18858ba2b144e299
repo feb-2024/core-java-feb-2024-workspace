@@ -6,8 +6,8 @@ public class FordFigoTitanium extends FordFigo{
 	public FordFigoTitanium(String modelName, String color, int noOfAirbags) {
 		//super();
 		super(modelName, color);
-		//this.modelName = modelName;
-		//this.color = color;
+		this.modelName = modelName;
+		this.color = color;
 		this.noOfAirbags = noOfAirbags;
 	}
 	

@@ -402,80 +402,29 @@ Looping statements in java
 			- has-a	relation
 				- how is this acheived? find out the answer before 10th april class
 				- what is composition and aggregation? find answer for this as well
+	
+	
 10/04/2024
 ----------
 	- question
 		- lets say we have a multilevel inheritence
 			class A {
-				A () { 
-				//super(); automatically introduced by the compiler if you have not provided a super() statement
-				System.out.println("A"); }
+				A () { System.out.println("A"); }
 			}
 			class B extends A {
-				B () { 
-				//super(); automatically introduced by the compiler if you have not provided a super() statement
-				System.out.println("B"); }
+				B () { System.out.println("B"); }
 				}
 			class C extends B {
-				C () { 
-				//super(); automatically introduced by the compiler if you have not provided a super() statement
-				System.out.println("C"); }
+				C () { System.out.println("C"); }
 			}
 			class D extends C {
-				D () { 
-				//super(); automatically introduced by the compiler if you have not provided a super() statement
-				System.out.println("D"); }
+				D () { System.out.println("D"); }
 			}
 			class Main{
 				D d = new D();
 			}
-		
-		- what is the output? 
-			ans:
-				A
-				B
-				C
-				D
-				
-		- in which order will the constructors be called?
-			ans:
-				first D,s constructor os called and since first line is uper(), then c's constructor is called
-		
-	- Polymorphism 
-		- the next pillar of OOPS
-		- poly means many and morphism means forms - so more than one form
-		- types of polymorphism
-			- compile time polymorphism
-				- here static binding takes place and hence is also called static polymorphism
-				- method overloading is an example of compile time polymorphism
-				- method overloading means same method name with different arguments
-				- different arguments means either of them should be different
-					- no. of arguments
-					- order of arguments
-					- type of argument 
-				- we do not consider the return type in method overloading
-				- method overloading can be achieved between a super class and a sub class or with a class
-				- also note that inheritence is not a pre-requisite of method overloading
-				- what is the purpose of method overloading?
-					- Vinod Chandra 19:44
-						increses readability of the program and also provides flexibility for 
-						programmers so that they can call the same method for different types of data.
-					- mere convinience
-						Eg: println() method is overloaded
-								int x = 30;				
-								System.out.println(x);
-								String msg = "hello";
-								System.out.println(msg);
-								boolean flag = true;
-								System.out.println(flag);
-								
-			- runtime polymorphism
-				- here dynamic binding takes place and hence is also called dynamic polymorphism
-				- method overriding is an example of runtime polymorphism
-				
-	- has-a	relation
-				- how is this acheived? pushed till answer is found out
-				- what is composition and aggregation? find answer for this as well	
-
 			
+		- the constructors will be called in which order?
+			
+				
 	- destructors in java	
