@@ -477,5 +477,34 @@ Looping statements in java
 				- how is this acheived? pushed till answer is found out
 				- what is composition and aggregation? find answer for this as well	
 
-			
+15/04/2024
+-----------
+Runtime polymorphism
+	- here dynamic binding takes place and hence is also called dynamic polymorphism
+	- method overriding is an example of runtime polymorphism
+	- is inheritence a pre requisite for method overriding? - YES
+	- what is method overriding?
+		- Ankit Raj 18:47
+				Method overriding in object-oriented programming refers to the ability of a subclass to 
+				provide a specific implementation of a method that is already defined in its superclass.
+		- Kora Bhoomika 18:49
+				method overriding involves creating a method in the child class that has the same 
+				name, parameters, and return type as a method in the parent class
+		- Archana Erra 18:49
+				overriding a function requires a subclass or child class to provide a variety of method 
+				implementations, that are already provided by one of its superclasses or parent classes, in 
+				any object-oriented programming language
+		- the method in the sub class is called the overriding method
+		- the method in the super class is called overridden method
+		- when we create an object of the sub class, the overriding method of the sub class is called when invoked.
+		- here the sub class method masks the super class method
+		- while overiding we consider the method name(same), method parameters(same) and the return type(same) as well.
+		- Vinod Chandra 19:03
+				@Override
+					This annotation helps the compiler to check if a method is actually overriding a method from the superclass. 
+					If there is a mismatch in the signature, the compiler will generate an error.	
+	
+	
+	
+	
 	- destructors in java	

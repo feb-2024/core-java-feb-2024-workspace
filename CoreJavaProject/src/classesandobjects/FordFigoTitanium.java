@@ -14,4 +14,9 @@ public class FordFigoTitanium extends FordFigo{
 	public String ejectAirbags() {
 		return modelName + " has ejected " + noOfAirbags + " airbags!";
 	}
+	
+	@Override
+	public String applyBrake() {
+		return modelName + " applied ABS brakes!";
+	}
 }
