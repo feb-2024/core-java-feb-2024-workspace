@@ -1,0 +1,15 @@
+package classesandobjects;
+
+public class Exhibition {
+	public void exhibit(Dog dog) {
+		System.out.println(dog.breathe());
+		System.out.println(dog.mobility());
+		System.out.println(dog.friendly());
+	}
+	
+	public void exhibit(Snake snake) {
+		System.out.println(snake.breathe());
+		System.out.println(snake.mobility());
+		System.out.println(snake.attacks());
+	}
+}

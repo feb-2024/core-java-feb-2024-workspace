@@ -38,9 +38,7 @@ public class AnimalDemo {
 		
 		System.out.println("---------------");
 		
-		Animal animal3 = dog2; // here we are upcasting dog2 to Animal reference type
-							   // upcasting is done implicitly 
-							   // so like this we can play with the referencde variables
+		Animal animal3 = dog2;
 		
 		System.out.println("---------------");
 		

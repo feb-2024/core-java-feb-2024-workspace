@@ -504,11 +504,7 @@ Runtime polymorphism
 					This annotation helps the compiler to check if a method is actually overriding a method from the superclass. 
 					If there is a mismatch in the signature, the compiler will generate an error.	
 	
-16/04/2024
-----------
-	- a super class reference/object variable can point to a subclass object
-			Animal animal2 = new Dog();
-	-  	
+	
 	
 	
 	- destructors in java	

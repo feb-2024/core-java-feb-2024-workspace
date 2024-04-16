@@ -1,0 +1,10 @@
+package classesandobjects;
+
+public class ExhibitionDemo {
+
+	public static void main(String[] args) {
+		Exhibition exhibition = new Exhibition();
+		
+	}
+
+}
