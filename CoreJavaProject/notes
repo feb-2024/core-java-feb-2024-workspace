@@ -508,7 +508,46 @@ Runtime polymorphism
 ----------
 	- a super class reference/object variable can point to a subclass object
 			Animal animal2 = new Dog();
-	-  	
+	- what is dynamic/late/runtime polymorphism?
+	 	
 	
+17/04/2024
+----------
+Encapsulation
+	- What is encapsulation?
+		- D BHAVANAGIRI 17:56
+			Wrapping up of data and function into to a single unit is called encapusulation.
+		
+		- K. KUSUMA 17:59
+			Hiding of data
+		
+		- Ankit Raj 17:59
+			- encapsulation is the mechanism of bundling data (attributes) and methods (functions) that operate on the data into a single unit
+			- It hides the internal state of an object from the outside world and only exposes the necessary functionalities through methods......
+	- how can we acheive all the above said definition? - through access specifiers
+	- what are the access specifiers?
+		- Vinod Chandra 18:07
+				access specifiers are keywords used to define the accessibility of classes, methods, and fields,constructors within a class
+		- acheived through
+			- public
+			- protected
+			- default/no modifier
+			- private
+		
+	- these access specifiers is used in front the members of the class
 	
+	- tabulate
+								within class		within package		outside package+extended classes		outside package
+		public						yes					yes						yes									yes
+		protected					yes					yes						yes									no
+		default/no modifier			yes					yes						no									no
+		private						yes					no						no									no
+		
+	- hiding the data members by making it private and provide public getters/setters
+	- getter methods are also called as accessors
+	- setter methods are also called as mutators
+	- getter/accessor gives the read access of the variable
+	- setter/mutator gives the write access of the variable
+	
+	 
 	- destructors in java	

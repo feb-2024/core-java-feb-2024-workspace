@@ -1,0 +1,21 @@
+package encapsulation.maruthi;
+
+public class MaruthiSwift {
+	String engineWorking() {
+		return "copyright engine of Maruthi working";
+	}
+	
+	String switchOn() {
+		return "Maruthi Swift car switched on";
+	}
+	
+	String accelerate() {
+		engineWorking();
+		return "Maruthi Swift car switched on";
+	}
+	
+	String switchOff() {
+		return "Maruthi Swift car switched off";
+	}
+	
+}

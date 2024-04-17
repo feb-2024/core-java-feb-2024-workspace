@@ -1,0 +1,15 @@
+package encapsulation;
+
+import encapsulation.driverpool.CarDriver;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		CarDriver driver1 = new CarDriver();
+		CarDriver driver2 = new CarDriver();
+		
+		System.out.println(driver1.driveTheCar());
+
+	}
+
+}

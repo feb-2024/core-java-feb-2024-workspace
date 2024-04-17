@@ -19,6 +19,7 @@ public class Exhibition {
 	public void exhibit(Animal animal) {
 		System.out.println(animal.breathe());
 		System.out.println(animal.mobility());
+		// how can i access the extra methods of Dog and Snake class?
 	}
 	
 }

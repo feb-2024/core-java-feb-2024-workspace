@@ -1,0 +1,27 @@
+package interviewquestions;
+
+public class MainClass
+{
+    void method(int ... a)
+    {
+        //System.out.println(1);
+    	for(int eachA: a) {
+    		System.out.println(eachA);
+    	}    
+    }
+ 
+//    static void method(int[] a)
+//    {
+//        //System.out.println(2);
+//    	for(int eachA: a) {
+//    		System.out.println(eachA);
+//    	}
+//    }
+    
+    public static void main(String args[]) {
+    	int[] marks = {30,50,10,80};
+    	//method(marks);
+    	method(25,35,65,29,101,24);
+    	
+    }
+}

@@ -1,0 +1,20 @@
+package encapsulation.driverpool;
+
+import encapsulation.maruthi.MaruthiSwift;
+
+public class CarDriver {
+	MaruthiSwift maruthiSwift;
+
+	public CarDriver() {
+		maruthiSwift = new MaruthiSwift();
+	}
+	
+	String driveTheCar() {
+		System.out.println(maruthiSwift.switchOn());
+		System.out.println(maruthiSwift.accelerate());
+		System.out.println(maruthiSwift.switchOff());
+		return "Maruthi Swift car driven";
+	}
+	
+	
+}

@@ -1,0 +1,22 @@
+package encapsulation.driverpool;
+
+import encapsulation.maruthi.MaruthiSwift;
+
+public class CarDriver {
+	MaruthiSwift maruthiSwift;
+
+	public CarDriver() {
+		maruthiSwift = new MaruthiSwift();
+	}
+	
+	public String driveTheCar() {
+		System.out.println(maruthiSwift.switchOn());
+		System.out.println(maruthiSwift.accelerate());
+		System.out.println(maruthiSwift.switchOff());
+		//maruthiSwift.style(); // cannot access because it is protected
+		//maruthiSwift.applyBrake(); // cannot access because it is default
+		return "Driver has driven Maruthi Swift car";
+	}
+	
+	
+}
