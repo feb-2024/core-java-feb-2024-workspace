@@ -583,7 +583,4 @@ Abstraction
 	 			- interfaces are meant to be implemented by a class
 	 			- this class that implements the interface is called implementation/concrete class
 	 			- the implemenation class should provide the implementation for all the abstract methods of the interface
-	 		- in java 8+, interface can also have default methods and static methods
-	 			- default methods are methods with method body
-	 			- static methods are static methods with method body	
 	- destructors in java	

@@ -557,33 +557,14 @@ Abstraction
 			fundamental concept that allows to hide complex implementation details and only show the necessary features of an object
 		- Emaaz Khot
 			hiding the implementation details of a class and showing only the essential features of the object
-	- how is abstraction acheived?
+	- how is abstarction acheived?
 		- through abstract classes and interfaces
 	- abstract classes
 		- what is an abstract class?
 			- a class which has atleast one abstract method
 		- what is an abstract method?
 			- a method which is declared inside an abstract class and has no method body
-		- can I instantiate(create object of) an  abstract class?
-			No we cannot instantiate an abstract class. Abstract classes are incomplete classes. They dont have 
-			the complete implementation of the methods.
-		- abstract classes are also called as incomplete classes
-	 	- if we cannot create an object of abstract classes then what is its purpose?
-	 		- abstract classes are meant to be inherited
-	 		- the extended class should provide the definition/implementation for the abstract method
-	 		- therefore the extended class is called the complete/concrete class
-	 - interfaces
-	 		- a pure abstract class meaning it has only abstract methods (before java 8)
-	 		- an interface can contain public abstract methods and public static final variables (before java 8)
-	 		- the methods in an interface are by default public and abstract 
-	 		- the variables in an interface is by default public static final
-	 		- can I create an object of an interface?
-	 			- no we cannot crteate an object of an interface. 
-	 		- if we cannot create an object of interface then what is its purpose?
-	 			- interfaces are meant to be implemented by a class
-	 			- this class that implements the interface is called implementation/concrete class
-	 			- the implemenation class should provide the implementation for all the abstract methods of the interface
-	 		- in java 8+, interface can also have default methods and static methods
-	 			- default methods are methods with method body
-	 			- static methods are static methods with method body	
+
+
+	 
 	- destructors in java	
