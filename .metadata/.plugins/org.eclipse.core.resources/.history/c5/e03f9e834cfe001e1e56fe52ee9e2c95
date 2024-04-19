@@ -1,0 +1,5 @@
+package abstraction;
+
+public class MyInterfaceImpl implements  MyInterface{
+
+}

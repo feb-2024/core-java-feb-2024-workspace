@@ -1,0 +1,19 @@
+package abstraction;
+
+public interface MyInterface {
+	int AGE = 21;
+	
+	void display();
+	
+	default String show() {
+		return "in show default method";
+	}
+	
+	static String print() {
+		return "in print static method";
+	}
+	
+	private String myMethod() {
+		return "private method";
+	}
+}

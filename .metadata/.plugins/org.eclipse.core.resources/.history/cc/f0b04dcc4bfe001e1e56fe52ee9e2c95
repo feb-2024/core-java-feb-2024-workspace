@@ -1,0 +1,7 @@
+package abstraction;
+
+public interface MyInterface {
+	int AGE = 21;
+	void display();
+	
+}
