@@ -627,11 +627,11 @@ access modifiers
 			- class
 				- a static class has to be an inner class. An outer class cannot be a static class.
 			- block
-				- how do we write a static block
+				- how do we write a ststic block
 					static {
 					
 					}
-				- static blocks are meant for initializing static variables.
+				- static blocks are meant for intitializing static variables.
 				- static blocks are called automatically when the class is loaded in the memory
 				- a class can have multiple static blocks
 		- sequence

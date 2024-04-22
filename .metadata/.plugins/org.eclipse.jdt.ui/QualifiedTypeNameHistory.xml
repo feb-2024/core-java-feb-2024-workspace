@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="encapsulation.driverpool.CarDriver"/>
+    <fullyQualifiedTypeName name="encapsulation.maruthi.MaruthiSwift"/>
+    <fullyQualifiedTypeName name="abstraction.SafetyGuidelines2021"/>
 </qualifiedTypeNameHistroy>

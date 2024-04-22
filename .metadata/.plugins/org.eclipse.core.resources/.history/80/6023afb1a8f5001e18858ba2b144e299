@@ -1,9 +1,0 @@
-package classesandobjects;
-
-public class FordFigo {
-	String modelName;
-	String color;
-	String carNumber;
-	
-	
-}

@@ -631,7 +631,7 @@ access modifiers
 					static {
 					
 					}
-				- static blocks are meant for initializing static variables.
+				- static blocks are meant for intitializing static variables.
 				- static blocks are called automatically when the class is loaded in the memory
 				- a class can have multiple static blocks
 		- sequence
