@@ -86,15 +86,5 @@ public class Room {
 		return wallArea;
 	}
 	
-	@Override
-	public boolean equals(Object obj) {
-		// here we are going to redefine the equals() of Object and perform content equality
-		Room other = (Room)obj;
-		if(other == null) {
-			return false;
-		} else if (this.length == other.length && this.width == other.width && this.height == other.height) {
-			return true;
-		}
-		return false;
-	}
+	
 }
