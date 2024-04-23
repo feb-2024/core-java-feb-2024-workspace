@@ -54,13 +54,10 @@ public class RoomDemo {
 		System.out.println("room4 == room1 : " + (room4 == room1)); // false
 		
 		// we want to perform content equality and hence we call the equals method of super class Object
-		// but the super class Object's equals methods performs reference equality and hence we get the same output.
-		// so we override the equals methods in the Room class and write our logic to perform content equality.
-		// so after overriding equals methods the output is different because it performs content equality.
-		System.out.println("room1.equals(room2) : " + (room1.equals(room2))); // false , after overriding equals we got true
-		System.out.println("(room1.equals(room3) : " + (room1.equals(room3))); // true , after overriding equals we got true
-		System.out.println("(room3.equals(room4) : " + (room3.equals(room4))); // false , after overriding equals we got false
-		System.out.println("(room4.equals(room1) : " + (room4.equals(room1))); // false , after overriding equals we got false
+		System.out.println("room1 == room2 : " + (room1.equals(room2))); // false
+		System.out.println("room1 == room3 : " + (room1.equals(room3))); // true
+		System.out.println("room3 == room4 : " + (room3.equals(room4))); // false
+		System.out.println("room4 == room1 : " + (room4 == room1)); // false
 		
 		
 	}

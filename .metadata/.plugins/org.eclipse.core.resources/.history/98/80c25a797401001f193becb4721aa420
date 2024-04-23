@@ -1,0 +1,44 @@
+package classesandobjects;
+
+public class RoomDemo {
+
+	public static void main(String[] args) {
+//		int mark;
+//		mark = 50;
+		
+		int mark = 50;
+		
+		// here we are going to create an object for Room class
+//		Room studyRoom;  // in this line Room object is not created
+//		studyRoom = new Room(); // only in this after the use of new keyword room object is created
+		
+		Room studyRoom = new Room(200, 180, 150);
+		//studyRoom.length = 200;
+		//studyRoom.width = 180;
+		//studyRoom.height = 150;
+		
+		int studyFloorArea = studyRoom.calculateFloorArea();
+		System.out.println("Floor area of studyRoom is : " + studyFloorArea + " units ");
+		
+		int cost = studyRoom.calculateWallPaintingCost(2);
+		System.out.println("Cost of painting studyRoom walls : Rs." + cost);
+		
+		Room diningRoom = new Room(400, 200, 150);
+//		diningRoom.length = 400;
+//		diningRoom.width = 200;
+//		diningRoom.height = 150;
+		
+		System.out.println("Floor area of diningRoom is : " + diningRoom.calculateFloorArea() + " units ");
+		System.out.println("Cost of painting diningRoom walls : Rs." + diningRoom.calculateWallPaintingCost(3));
+		
+		Room livingRoom = new Room(500, 250, 150, "lightpink");
+		System.out.println("Floor area of livingRoom is : " + livingRoom.calculateFloorArea() + " units ");
+		System.out.println("Cost of painting livingRoom walls : Rs." + livingRoom.calculateWallPaintingCost(1));
+		
+		Room bedRoom = new Room(250, 200, 150, "lightblue", 101);
+		System.out.println("Floor area of bedRoom is : " + bedRoom.calculateFloorArea() + " units ");
+		System.out.println("Cost of painting bedRoom walls : Rs." + bedRoom.calculateWallPaintingCost(1));
+		
+	}
+
+}

@@ -661,11 +661,5 @@ access modifiers
 				- Emaaz Khot 18:34
 					to indicate that a member variable should not be serialized when the object is converted 
 					into a byte stream
-		
-23/04/2024
-----------
-Object class
-------------
-
-			
+					
 	- destructors in java	
