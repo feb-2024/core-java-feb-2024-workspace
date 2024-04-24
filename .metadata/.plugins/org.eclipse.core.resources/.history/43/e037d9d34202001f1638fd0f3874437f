@@ -666,21 +666,6 @@ access modifiers
 ----------
 Object class
 ------------
-	- explored the methods
-	- reference equality
-	- content equality by oveririding equals method
-	
-24/04/2024
------------
-  -hashcode()
-	- hashcode for objects in java
-	- overriding hashcode method
-	- contract
-		- equal objects should have equal hashcode, which means that whenever we overide the equals methods we should overide the hascode method also
-		- but reverse need not be true : objects with equal hashcode necessarily need not be equal	
+
 			
-  -toString()
-  	- string representation of an object
-  - destructors in java	
-  	- we override the finalize method of the object class and it acts as the desctructor
-  
+	- destructors in java	

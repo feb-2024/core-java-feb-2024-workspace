@@ -62,13 +62,7 @@ public class RoomDemo {
 		System.out.println("(room3.equals(room4) : " + (room3.equals(room4))); // false , after overriding equals we got false
 		System.out.println("(room4.equals(room1) : " + (room4.equals(room1))); // false , after overriding equals we got false
 		
-		System.out.println("room1: " + room1.hashCode());
-		System.out.println("room2: " + room2.hashCode());
-		System.out.println("room3: " + room3.hashCode());
-		System.out.println("room4: " + room4.hashCode());
 		
-		System.out.println(room1);
-		System.out.println(room1.toString());
 	}
 
 }

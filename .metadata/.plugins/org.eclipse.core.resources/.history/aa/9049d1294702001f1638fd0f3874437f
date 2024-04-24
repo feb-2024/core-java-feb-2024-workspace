@@ -682,5 +682,4 @@ Object class
   -toString()
   	- string representation of an object
   - destructors in java	
-  	- we override the finalize method of the object class and it acts as the desctructor
   

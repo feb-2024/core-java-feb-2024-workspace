@@ -680,7 +680,5 @@ Object class
 		- but reverse need not be true : objects with equal hashcode necessarily need not be equal	
 			
   -toString()
-  	- string representation of an object
-  - destructors in java	
-  	- we override the finalize method of the object class and it acts as the desctructor
   
+	- destructors in java	

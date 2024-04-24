@@ -1,7 +1,5 @@
 package classesandobjects;
 
-import java.util.Objects;
-
 public class Room {
 	private int length;
 	private int width;
@@ -87,40 +85,6 @@ public class Room {
 		int wallArea = (2 * height * (width + length));
 		return wallArea;
 	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(height, length, width);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Room other = (Room) obj;
-		return height == other.height && length == other.length && width == other.width;
-	}
-
-	@Override
-	public String toString() {
-		return "Room [length=" + length + ", width=" + width + ", height=" + height + ", roomColor=" + roomColor
-				+ ", roomNumber=" + roomNumber + "]";
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-		// finalize method acts like the destructor
-		// here we can release the system resources that were occupied in the constructor
-		// for testing let us give a sop
-		System.out.println("in finalize()");
-	}
-
-	
-	
 	
 //	@Override
 //	public boolean equals(Object obj) {
@@ -138,5 +102,4 @@ public class Room {
 //	public int hashCode() {
 //		return (length+width+height);
 //	}
-	
 }

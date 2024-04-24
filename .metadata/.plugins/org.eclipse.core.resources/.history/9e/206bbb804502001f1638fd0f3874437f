@@ -105,20 +105,6 @@ public class Room {
 		return height == other.height && length == other.length && width == other.width;
 	}
 
-	@Override
-	public String toString() {
-		return "Room [length=" + length + ", width=" + width + ", height=" + height + ", roomColor=" + roomColor
-				+ ", roomNumber=" + roomNumber + "]";
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-		// finalize method acts like the destructor
-		// here we can release the system resources that were occupied in the constructor
-		// for testing let us give a sop
-		System.out.println("in finalize()");
-	}
-
 	
 	
 	
