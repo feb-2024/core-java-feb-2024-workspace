@@ -1,0 +1,10 @@
+package strings;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		String msg1 = "hello";
+		String msg2 = new String("welcome");
+	}
+
+}

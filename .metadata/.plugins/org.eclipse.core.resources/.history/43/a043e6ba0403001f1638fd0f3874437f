@@ -1,0 +1,18 @@
+package strings;
+
+import java.util.Scanner;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		int mark = 50;
+		String msg1 = "hello"; // recommended way of creating string objects
+		String msg2 = new String("welcome");
+		System.out.println(msg1);
+		System.out.println(msg2);
+		
+		Scanner scan = new Scanner(System.in);
+		
+	}
+
+}

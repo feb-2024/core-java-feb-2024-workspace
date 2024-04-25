@@ -1,0 +1,55 @@
+package strings;
+
+import java.util.Scanner;
+
+public class StringDemo {
+	
+	public static String concatenateString(String st1, String st2) {
+		// logic 1
+		//String result = st1 + st2;
+		
+		// logic 2
+//		String result = st1;
+//		for(int i=0;i<st2.length();i++) {
+//			result += st2.charAt(i);
+//		}
+		
+		// logic 3
+		String result = st1.concat(st2);
+		return result;
+	}
+
+	public static void main(String[] args) {
+//		int mark = 50;
+//		String msg1 = "hello"; // recommended way of creating string objects
+//		String msg2 = new String("welcome");
+//		System.out.println(msg1);
+//		System.out.println(msg2);
+		
+		Scanner scan = new Scanner(System.in);
+		
+		//1. Write a Java program to concatenate Two strings 
+//		System.out.println("Enter first string:");
+//		String str1 = scan.next();
+//		System.out.println("Enter second string:");
+//		String str2 = scan.next();
+//		
+//		String output1 = concatenateString(str1, str2);
+//		
+//		System.out.println("Concatenated strings are:" + output1);
+		
+		//47. Write a program to Convert a character array to string
+//		char[] myCharArray = {'e','l','e','p','h','a','n','t'};
+//		String output2 = new String(myCharArray);
+//		System.out.println(output2);
+		
+		//38. Write a Java program to Given string Convert Lowercase to Uppercase
+		System.out.println("Enter the string:");
+		String str3 = scan.next();
+		String output3 = str3.toUpperCase();
+		System.out.println(output3);
+		
+		
+	}
+
+}
