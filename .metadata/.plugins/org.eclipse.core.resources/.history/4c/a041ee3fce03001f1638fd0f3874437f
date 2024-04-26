@@ -1,0 +1,23 @@
+package strings;
+
+public class StringBufferDemo {
+
+	public static void main(String[] args) {
+		String str1 = "welcome";
+		
+		// CRUD operations
+		// C - Create, R - Read, U - Update, D - Delete
+		
+		// C - Create(Add, Insert...)
+		StringBuffer strBuff = new StringBuffer(str1);
+		strBuff.append(" to");
+		strBuff.append(" JAVA!");
+		
+		// R - Read(Fetch, display, retrieve...)
+		System.out.println(strBuff);
+		
+		// U - Update(replace, change, edit...)
+		// lets change "welcome to JAVA" to "welcome to SQL" 
+	}
+
+}
