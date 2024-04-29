@@ -1,6 +1,0 @@
-package encapsulation.driverpool;
-
-public class CarDriver {
-	MaruthiSwift maruthiSwift;
-	
-}

@@ -1,6 +1,0 @@
-package abstraction;
-
-public class Pulsar extends Bike {
-	
-
-}

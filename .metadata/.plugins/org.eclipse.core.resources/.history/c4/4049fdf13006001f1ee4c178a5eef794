@@ -1,0 +1,14 @@
+package arrays;
+
+public class Irregular2DArray {
+
+	public static void main(String[] args) {
+		// declare a irregular 2 dimension array
+		int[][] irrArray = new int[4][];
+		irrArray[0] = new int[3];
+		irrArray[1] = new int[1];
+		irrArray[2] = new int[3];
+		irrArray[3] = new int[2];
+	}
+
+}

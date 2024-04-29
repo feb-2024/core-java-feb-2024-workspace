@@ -1,7 +1,0 @@
-package encapsulation.maruthisuzuki;
-
-import encapsulation.maruthi.MaruthiSwift;
-
-public class MaruthiSuzukiDezire extends MaruthiSwift{
-
-}

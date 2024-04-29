@@ -1,6 +1,0 @@
-package abstraction;
-
-public class LnT implements SafetyGuidelines2021{
-	
-
-}

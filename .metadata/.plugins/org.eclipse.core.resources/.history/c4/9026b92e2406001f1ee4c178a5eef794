@@ -1,0 +1,11 @@
+package arrays;
+
+public class OneDArrayDemo {
+
+	public static void main(String[] args) {
+		// declare an array
+		int[] myMarks = new int[5];
+		
+	}
+
+}

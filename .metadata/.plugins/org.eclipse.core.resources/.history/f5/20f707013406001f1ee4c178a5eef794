@@ -1,0 +1,12 @@
+package arrays;
+
+public class ArrayPractiseQuestions {
+
+	public static void main(String[] args) {
+		// 37. Write a program to Search an item into the array using linear search
+		Scanner scan = new Scanner(System.in);
+		
+		
+	}
+
+}

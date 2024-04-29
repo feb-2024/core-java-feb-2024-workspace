@@ -1,0 +1,21 @@
+package arrays;
+
+public class TwoDArrayDemo {
+
+	public static void main(String[] args) {
+		// declare the array
+		int[][] matrixA = new int[3][2];
+		
+		// assigning values to the elements
+		matrixA[0][0] = 3;
+		matrixA[0][1] = 6;
+		matrixA[1][0] = 4;
+		matrixA[1][1] = 8;
+		matrixA[2][0] = 7;
+		matrixA[2][1] = 9;
+
+		// traversing the array
+		
+	}
+
+}
