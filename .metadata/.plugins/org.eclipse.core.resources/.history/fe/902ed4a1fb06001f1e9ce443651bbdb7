@@ -149,13 +149,19 @@ public class ArrayPractiseQuestions {
 //			System.out.println(allElements[i]);
 //		}
 		
-		// linear time complexity O(n)
 		int[] allElements2 = new int[size];
+		int counter = 0;
 		int j = 0;
-		for(int i=0;i<allElements.length;i++) {
-			if(allElements[i]!=0) {
+		for(int i=0;i<allElements[i].length;i++) {
+			if(allElements[i]==0) {
+				counter++;
+			}else {
 				allElements2[j++] = allElements[i];
 			}
+		}
+		System.out.println("j:" + j);
+		for(int k=0;k<counter;k++) {
+			allElements2[j++] = 0;
 		}
 		System.out.println("THE ARRAY:");
 		for(int i=0;i<allElements2.length;i++) {
