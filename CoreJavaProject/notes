@@ -699,4 +699,48 @@ Object class
  		- array are treated as objects in java
  		- array takes memory in heap
  	- one dimensional array
- 	
+ 	- two dimensional array
+ 	- jagged/irregular dimensional array
+ 
+ 30/04/2024
+ -----------
+ 	- worked on array practise questions
+ 
+ 02/05/2024
+ ----------
+ 	- wrapper classes
+ 		- the 8 primitive data types in java have 8 equivalent Wrapper types
+ 			byte   	- Byte
+ 			short  	- Short
+ 			int  	- Integer
+ 			long	- Long
+ 			float	- Float
+ 			double	- Double
+ 			boolean	- Boolean
+ 			char	- Character
+ 		- the primitive types start with small letter whereas the Wrapper type is a class and hence starts with capital letter
+ 		- we cannot create an object for primitive type whereas Wrapper type is a class and hence we can create an Object fro Wrapper type
+ 				Eg: Float f1 = new Float(4.5f);
+ 		- Autoboxing ?		
+ 			- Sandhya Pulicharla 17:52
+				automatic conversion between primitive types and their wrapper classes
+					eg: int mark = 20;
+					    Integer myMark = mark; // with autoboxing : assigning a primitive to wrapper
+					    int allMark = myMark; // with autoboxing : assigning a wrapper to primitive
+					    Integer myMark = new Integer(mark); // without autoboxing 
+					    int allMarks = myMark.intValue(); // without autoboxing
+ 		- preferred : Wrapper type or primtive type?
+ 			- pritmive types take less memory than wrapper type, so primitive is preferred
+ 			- however if we want to perform some operations then we can go for the wrapper type
+ 		- String is considered as the universal datatype.
+ 			- so conversion between String and other data types are important
+ 			- Wrapper classes give us an option for the conversion
+ 				- eg : covert String to Integer
+ 					String str = "45";
+ 					Integer itr = Integer.parseInt(str);
+ 					int itr = Integer.parseInt(str); // can do this because of autoboxing
+ 				- eg: cpnvert Integer to String
+ 					Integer mark = 60;
+ 					String str = Integer.toString(mark);
+ 					String str = mark + "";
+ 	- demo on dynamic arrays in java

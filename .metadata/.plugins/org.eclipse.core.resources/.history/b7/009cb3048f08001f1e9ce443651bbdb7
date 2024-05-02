@@ -1,0 +1,16 @@
+package arrays;
+
+public class MyDynamicArrayDemo {
+
+	public static void main(String[] args) {
+		MyDynamicArray mda = new MyDynamicArray();
+		
+		System.out.println(mda.getSize());
+		System.out.println(mda.getCapacity());
+		
+		System.out.println(mda);
+	
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package wrappertype;
+
+public class IntegerDemo {
+
+	public static void main(String[] args) {
+		Integer itr1 = new Integer(40);
+		Integer itr2 = new Integer("40");
+		Integer itr3 = 40;
+		System.out.println(itr1);
+		System.out.println(itr2);
+		System.out.println(itr3);
+	}
+
+}

@@ -1,0 +1,31 @@
+package arrays;
+
+public class MyDynamicArray {
+	private int[] myArray;
+	private int size;
+	private int capacity;
+	
+	public MyDynamicArray() {
+		size = 0;
+		capacity = 5;
+		myArray = new int[capacity];
+	}
+	
+	public int getSize() {
+		return size;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public void add(int item) {
+		myArray[size++] = item;
+	}
+	
+	public void remove(int item) {
+		
+	}
+	
+	
+}

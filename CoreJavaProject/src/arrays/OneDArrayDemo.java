@@ -25,6 +25,8 @@ public class OneDArrayDemo {
 		
 		// initializing an array
 		String[] allColors = {"red", "blue", "green"};
+		//System.out.println(allColors.length()); // why does this not work? but the next line works 
+		System.out.println(allColors.length);
 		
 	}
 
