@@ -1,0 +1,25 @@
+package functionalinterfacesandlambdas;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		System.out.println("1) Conventional way");
+		//Addition add1 = new Addition();
+		Operation add1 = new Addition();
+		System.out.println("SUM : " + add1.operate(4, 5));
+		
+		Operation product1 = new Multiplication();
+		System.out.println("PRODUCT : " + product1.operate(2, 5));
+		System.out.println("-----------------------------");
+		
+		System.out.println("2) Anonymous classes");
+		Operation add2 = new Operation() {
+			@Override
+			public int operate(int a, int b) {
+				return (a+b);
+			}
+		};
+		System.out.println("SUM : " + add2.operate(40, 55));
+	}
+
+}

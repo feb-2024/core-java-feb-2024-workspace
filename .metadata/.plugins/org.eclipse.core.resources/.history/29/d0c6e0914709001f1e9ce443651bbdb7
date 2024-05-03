@@ -1,0 +1,746 @@
+22/03/2024
+----------
+
+data types - categories
+-----------------------
+	1. primitive data types
+	2. non-primitive/ derived data types
+	
+1. primitive data types
+----------------------
+	- 8 primitive data types
+		
+		integers
+		--------
+		byte - 1 byte
+		short - 2 bytes
+		int - 4 bytes
+		long - 8 bytes
+		
+		decimal numbers
+		---------------
+		float
+		double
+		
+		boolean - true / false
+		
+		char
+		
+	- these primitive datatypes starts with small letter
+	- these primitive datatypes are not objects
+	
+2. non-primitive/derived data types
+-----------------------------------
+	- arrays, classes, interfaces, enum
+	- these are called derived data types because they are derived from the primitive data types 	
+	
+	
+literals - fixed values
+ 
+type casting
+------------
+	1. implicit casting
+	2. explicit casting
+	
+connection between int and char
+
+25/03/2024
+----------
+1. diff between System.out.print() and System.out.println()
+	- System.out.print() - prints the output and cursor remains in the same line
+	- System.out.println() - prints the output and cursor moves to a new line
+	- Do we have System.out.printf() in java?
+	
+2. what is keyword, identifier and literal?
+	keyword - Keywords are reserved words and these are predefined in Java which cannot be used as identifiers
+	identifier - sequence of characters to identify something in program. 
+			   - Eg: variable names, class names, package names, interface names, method names 
+	literal - fixed values
+	
+3. Operators in Java
+	categories
+		- Arithmetic operators
+			+ - * / %
+		- Assignment operator
+			=
+		- Arithmetic assignment operator
+			+= -+ *= /= %=
+		- Relational operators
+			< <= > >= == !=
+		- Logical operators
+			&& || !
+		- Bitwise operators
+			& | ! ^ << >> >>>
+		- Ternary operator
+			int c = a>b?a:b;
+		- Increment/Decrement operator
+			++ --
+		
+26/03/2024
+----------	
+	- 3 main sections of any program
+		- input
+			Scanner class which is java.util package
+		- process
+			use operators, flow control stmts, looping stmts
+		- output
+			System.out.println()
+		
+	- input from user
+		- Scanner class which is in util package
+		- Scanner is a utility class given to us by java
+		- Scanner class uses the classes in java.io package to get input from the user
+	
+	- how to get the primitive data types as input from the user?
+		- scan.nextByte() 
+		- scan.nextShort()
+		- scan.nextInt()
+		- scan.nextLong()
+		- scan.nextFloat()
+		- scan.nextDouble()
+		- scan.nextBoolean()
+		- how do we get a char as input using Scanner?
+		
+		- scan.next() - used for string input
+		- scan.nextLine() - used for string input
+		
+		- we know next() and nextLine() is used to scan String input. What is the difference between next() and nextLine()? 
+		
+	- what is 
+		System.out	- refers to output/console/monitor
+		System.in - refers to the input/keyboard
+		System.err - refers to error output
+
+27-03-2024
+-----------
+Decision making statements
+----------------------------
+	- if statements
+		- simple if
+		- if...else
+		- else if ladder
+		- nested if
+		
+	- switch statements
+		- In Java, switch works only with 4 primitives and their wrappers, as well as with the enum type and String class.
+		This is
+
+			byte — Byte
+			short — Short
+			char — Character
+			int — Integer
+			Enum
+			String
+
+some of the important java features from java 8 to java 17
+----------------------------------------------------------
+java 8
+------
+	- lambda expressions and Stream API
+	- Method References
+	- Default methods
+	- Type Annotations
+	- Repeating Annotations
+	- Method Parameter Reflection
+java 9
+------
+	- Java Module System
+	- try with resources
+	- Diamond Syntax with Inner Anonymous Class
+	- Private Interface Methods
+java 10
+-------
+	- Introduction of var
+java 11
+-------
+	- use of var inside lambda expressions
+java 14
+-------
+	- switch expressions (different syntax for writing switch case)
+	- the yield keyword
+java 15
+-------
+	- text blocks ("""   """) ( similar to the back tick symbol(template strings) in Javascript)
+
+java 16
+-------
+	- pattern matching of instanceof
+	- Records
+java 17
+-------
+	- Sealed classes
+
+28/03/2024
+----------
+Looping statements in java
+--------------------------
+	- used when we want to perform a task multiple times
+	- when working with loops be careful not to write an infinite loop
+	- every time when the loop runs, we have to make sure that we are getting one step closer to ending the loop.
+	- for a loop to run what do we need?
+		- initial value : intial value on which the loop starts
+		- condition : condition to enter the loop
+		- expression (mostly inc/dec) : this expression will help us to get one step closer to the condition becoming false
+
+	- generally to run a loop we use a variable and we call this as running variable
+	- sometimes we may use the running variable in the repeated task that we want to perform 
+	- while loop
+		- is an entry control loop
+	- do...while loop
+		- is a exit control loop
+		- the body of the loop will definetly execute once
+	- for loop
+		- here the initial value, condn and exp is given in the same line
+		- it is convenient
+		- is for loop an entry control or exit control loop?  - for loop is a entry control loop
+		
+29/03/2024
+-----------
+	- patterns in java using nested for loops
+	- available in PatternLoopDemo.java
+	- Also shared the java simple practise questions in github
+	
+01/04/2024
+----------
+	- methods in java
+	- terminologies
+		- method declaration
+		- method definition
+		- method invocation
+		- method signature
+			- can have methods with
+				- no return type and no arguments
+				- no return type and have arguments
+				- with return type and no arguments
+				- with return type and have arguments
+	- working with methods involves 2 steps
+		1. method definition
+			- here we specify the method signature along with the method body
+			- by writing the definition of the method , the method body does not get executed
+		2. method invocation	
+			- in order for the body of the method to execute, we should call the method
+	
+02/04/2-24
+-----------
+	- command line arguments
+		- these are argument sent to the main method at the time of running the program
+		- these argument could be values needed for the main method to intialize resources
+		- created a demo program CommnadLineArgDemo.java
+	- created a menu driven program for TwoDShapes
+	
+03/04/2024
+-----------
+	- classes and objects are the building blocks of object oriented programming
+	
+	
+	- classes in java
+		- a class is a design/blueprint/sketch/template/prototype
+		- what can a class contain?
+			- data members/properties/variables/fields/attributes  
+			- member functions/methods  
+		- eg:
+				class Person {
+					String name;
+					double height;
+					double weight;
+					String gender;
+					// int noOfKeys; // no meaning
+					
+					boolean run(){
+						// code here
+					}
+					
+					boolean sleep(){
+						// code here
+					}
+					
+					boolean eat(){
+						// code here
+					}
+					
+					// boolean magnify(){ // no meaning
+					// }
+				}
+				
+		- submissions
+		
+		Ankit Raj  to  Everyone 19:39
+			public class Room {
+			    private double length;
+			    private double width;
+			    private double height;
+			    private double paintCostPerSqMeter;
+			
+			    public Room(double length, double width, double height, double paintCostPerSqMeter) {
+			  
+			    }
+			
+			    public double calculateFloorArea(){
+			    }
+			
+			    public double calculateWallArea() {
+			    }
+			
+			    public double calculatePaintCost() {
+			        
+			    }
+
+		Sandhya Pulicharla  to  Everyone 19:42
+			class Room{
+			       double length;
+			       double width;
+			       double cost;
+			       //take input from user(length,width)
+			       //calculate area using method
+			       double AreaOfFloor(){
+			             //code}
+			       double AreaOfWall(){
+			             //multiply area with no.of.walls}
+			        double PaintCost(){
+			              //based on area calculate cost
+			  }
+		
+		Emaaz Khot 19:46
+			public class Room {
+			private double length; // (in meters)
+			private double width; // (in meters)
+			private double height; //(in meters)
+			private double carpetCostPerSquareMeter; // Cost per square meter of carpeting
+			private double paintCostPerSquareMeter; // Cost per square meter of painting
+			
+			public Room(double length, double width, double height, double carpetCostPerSquareMeter, double paintCostPerSquareMeter) {
+			    }
+			    public double calculateFloorArea() {
+			        
+			    }
+			
+			    public double calculateWallArea() {        
+			    }
+			    
+			    public double calculateCarpetCost() {
+			       
+			    }
+			
+			    public double calculatePaintCost() {
+			    }
+			
+			    public static void main(String[] args) {
+			    }
+			}
+		- memory structure
+			stack memory
+				- local variables will take memory in stack
+				- a local variable if not initialized will hold garbage value
+			heap memory
+				- instance variables/data members take memory in heap 
+				- an instance variable if not initialized will hold default values
+					byte, short, int, long is 0
+					float, double is 0.0
+					boolean is false
+					char is '\o'
+					String is null
+
+04/04/2024
+-----------		
+	- objects in java : create an object of Room class and accessed its members
+	- stack and heap memory
+	- local variable and instance variable memory allocations
+	- local variable and instance variable default values
+	- memory when methods are invoked
+	- garbage collector
+	- create multiple objects for Room
+
+05/04/2024
+----------
+	- constructors in java
+		- what are contructors?
+			- a special method
+				- constructors don't have a return type, not even void
+				- constructor has the same name as the name of the class
+				- constructors are called automatically when an object is created
+		- the purpose of constructors are to initialize the instance variables
+		- if we do not provide a constructor in a class, a default constructor(has no arguments) is provided by the compiler	
+			- this can be verified by using the command javap
+			- javap command can introspect a class and list its structure
+		- the moment we provide a constructor in the class the compiler no longer provides the default constructor
+		- constructor overloading
+			- a class can have multiple constructors with different arguments
+			- different arguments means either of them are different
+				- no. of arguments
+				- the type of arguments are different
+				- the order of arguments
+		- constructor chaining
+			- we can call one constructor from another constructor within the class
+			- this is achieved by this()
+			
+08/04/2024
+----------			
+	- 4 pillars of OOPS
+		- Inheritence
+		- Polymorphism
+		- Encapsulation
+		- Abstraction
+	- Inheritence
+		- Here one(new) class Inherits the members(properties and methods) of another(existing) class
+		- the existing class is called parent/base/super class
+		- the new class which extends from the existing class is called child/derived/sub class
+		- we use the "extends" keyword to inherit
+		- we get the is-a relation through inheritance  
+		- Deriving a classes from existing class 
+		- parent child relation	
+		- inheritence gives us code reusability
+		- types of inheritence
+			- single level inheritence
+			- multi level inheritence
+			- hirarchial inheritence
+			- hybrid inheritence
+			- multiple inheritence ( not supported by java)  public class A extends B, C ----------> this is not possible
+		- relation between 2 classes
+			- is-a relation
+				- means one class extends another class
+				- so is-a means inheritence
+			- has-a	relation
+				- how is this acheived? find out the answer before 10th april class
+				- what is composition and aggregation? find answer for this as well
+10/04/2024
+----------
+	- question
+		- lets say we have a multilevel inheritence
+			class A {
+				A () { 
+				//super(); automatically introduced by the compiler if you have not provided a super() statement
+				System.out.println("A"); }
+			}
+			class B extends A {
+				B () { 
+				//super(); automatically introduced by the compiler if you have not provided a super() statement
+				System.out.println("B"); }
+				}
+			class C extends B {
+				C () { 
+				//super(); automatically introduced by the compiler if you have not provided a super() statement
+				System.out.println("C"); }
+			}
+			class D extends C {
+				D () { 
+				//super(); automatically introduced by the compiler if you have not provided a super() statement
+				System.out.println("D"); }
+			}
+			class Main{
+				D d = new D();
+			}
+		
+		- what is the output? 
+			ans:
+				A
+				B
+				C
+				D
+				
+		- in which order will the constructors be called?
+			ans:
+				first D,s constructor os called and since first line is uper(), then c's constructor is called
+		
+	- Polymorphism 
+		- the next pillar of OOPS
+		- poly means many and morphism means forms - so more than one form
+		- types of polymorphism
+			- compile time polymorphism
+				- here static binding takes place and hence is also called static polymorphism
+				- method overloading is an example of compile time polymorphism
+				- method overloading means same method name with different arguments
+				- different arguments means either of them should be different
+					- no. of arguments
+					- order of arguments
+					- type of argument 
+				- we do not consider the return type in method overloading
+				- method overloading can be achieved between a super class and a sub class or with a class
+				- also note that inheritence is not a pre-requisite of method overloading
+				- what is the purpose of method overloading?
+					- Vinod Chandra 19:44
+						increses readability of the program and also provides flexibility for 
+						programmers so that they can call the same method for different types of data.
+					- mere convinience
+						Eg: println() method is overloaded
+								int x = 30;				
+								System.out.println(x);
+								String msg = "hello";
+								System.out.println(msg);
+								boolean flag = true;
+								System.out.println(flag);
+								
+			- runtime polymorphism
+				- here dynamic binding takes place and hence is also called dynamic polymorphism
+				- method overriding is an example of runtime polymorphism
+				
+	- has-a	relation
+				- how is this acheived? pushed till answer is found out
+				- what is composition and aggregation? find answer for this as well	
+
+15/04/2024
+-----------
+Runtime polymorphism
+	- here dynamic binding takes place and hence is also called dynamic polymorphism
+	- method overriding is an example of runtime polymorphism
+	- is inheritence a pre requisite for method overriding? - YES
+	- what is method overriding?
+		- Ankit Raj 18:47
+				Method overriding in object-oriented programming refers to the ability of a subclass to 
+				provide a specific implementation of a method that is already defined in its superclass.
+		- Kora Bhoomika 18:49
+				method overriding involves creating a method in the child class that has the same 
+				name, parameters, and return type as a method in the parent class
+		- Archana Erra 18:49
+				overriding a function requires a subclass or child class to provide a variety of method 
+				implementations, that are already provided by one of its superclasses or parent classes, in 
+				any object-oriented programming language
+		- the method in the sub class is called the overriding method
+		- the method in the super class is called overridden method
+		- when we create an object of the sub class, the overriding method of the sub class is called when invoked.
+		- here the sub class method masks the super class method
+		- while overiding we consider the method name(same), method parameters(same) and the return type(same) as well.
+		- Vinod Chandra 19:03
+				@Override
+					This annotation helps the compiler to check if a method is actually overriding a method from the superclass. 
+					If there is a mismatch in the signature, the compiler will generate an error.	
+	
+16/04/2024
+----------
+	- a super class reference/object variable can point to a subclass object
+			Animal animal2 = new Dog();
+	- what is dynamic/late/runtime polymorphism?
+	 	
+	
+17/04/2024
+----------
+Encapsulation
+	- What is encapsulation?
+		- D BHAVANAGIRI 17:56
+			Wrapping up of data and function into to a single unit is called encapusulation.
+		
+		- K. KUSUMA 17:59
+			Hiding of data
+		
+		- Ankit Raj 17:59
+			- encapsulation is the mechanism of bundling data (attributes) and methods (functions) that operate on the data into a single unit
+			- It hides the internal state of an object from the outside world and only exposes the necessary functionalities through methods......
+	- how can we acheive all the above said definition? - through access specifiers
+	- what are the access specifiers?
+		- Vinod Chandra 18:07
+				access specifiers are keywords used to define the accessibility of classes, methods, and fields,constructors within a class
+		- acheived through
+			- public
+			- protected
+			- default/no modifier
+			- private
+		
+	- these access specifiers is used in front the members of the class
+	
+	- tabulate
+								within class		within package		outside package+extended classes		outside package
+		public						yes					yes						yes									yes
+		protected					yes					yes						yes									no
+		default/no modifier			yes					yes						no									no
+		private						yes					no						no									no
+		
+	- hiding the data members by making it private and provide public getters/setters
+	- getter methods are also called as accessors
+	- setter methods are also called as mutators
+	- getter/accessor gives the read access of the variable
+	- setter/mutator gives the write access of the variable
+	
+18/04/2024
+----------
+Abstraction
+	- what is abstraction?
+		- Ankit Raj
+			fundamental concept that allows to hide complex implementation details and only show the necessary features of an object
+		- Emaaz Khot
+			hiding the implementation details of a class and showing only the essential features of the object
+	- how is abstraction acheived?
+		- through abstract classes and interfaces
+	- abstract classes
+		- what is an abstract class?
+			- a class which has atleast one abstract method
+		- what is an abstract method?
+			- a method which is declared inside an abstract class and has no method body
+		- can I instantiate(create object of) an  abstract class?
+			No we cannot instantiate an abstract class. Abstract classes are incomplete classes. They dont have 
+			the complete implementation of the methods.
+		- abstract classes are also called as incomplete classes
+	 	- if we cannot create an object of abstract classes then what is its purpose?
+	 		- abstract classes are meant to be inherited
+	 		- the extended class should provide the definition/implementation for the abstract method
+	 		- therefore the extended class is called the complete/concrete class
+	 - interfaces
+	 		- a pure abstract class meaning it has only abstract methods (before java 8)
+	 		- an interface can contain public abstract methods and public static final variables (before java 8)
+	 		- the methods in an interface are by default public and abstract 
+	 		- the variables in an interface is by default public static final
+	 		- can I create an object of an interface?
+	 			- no we cannot crteate an object of an interface. 
+	 		- if we cannot create an object of interface then what is its purpose?
+	 			- interfaces are meant to be implemented by a class
+	 			- this class that implements the interface is called implementation/concrete class
+	 			- the implemenation class should provide the implementation for all the abstract methods of the interface
+	 		- in java 8+, interface can also have default methods and static methods
+	 			- default methods are methods with method body
+	 			- static methods are static methods with method body
+	 			
+22/04/2024
+----------
+access modifiers
+----------------
+	- abstract
+		- abstract can be used in front of 
+			- method
+			- class
+	- final
+		- final can be used in front of 
+			- variable
+				- the variable acts as a constant.
+				- eg: int MIN_AGE = 21;
+					- note the naming convention of final variables
+				- can I use final in front of a local variable? yes
+			- method
+				- it stops method overriding
+				- eg:
+					public final void engineWorking(){
+					
+					}
+			- class
+				- stops inheritence
+				- a final class cannot be extended
+				- eg: public final class Demo {}
+	- static
+		- static can be used in front of
+			- variable (instance variable)
+				- Emaaz Khot 19:27
+						static variables, a.k.a. class variables, are variables that belong to the 
+						class itself, rather than to individual instances of the class.
+				- static variables take a common memory unlike non-static variables which take seperate memory in heap.
+				- since static variables belong to the class and not to a particular object/instance of the class then can be 
+					access with the class name itself
+			- method
+				- methods which perform a common operation(operation which does not involve non static members) across all object
+				- static methods can be accessed with the class name.
+			- class
+				- a static class has to be an inner class. An outer class cannot be a static class.
+			- block
+				- how do we write a static block
+					static {
+					
+					}
+				- static blocks are meant for initializing static variables.
+				- static blocks are called automatically when the class is loaded in the memory
+				- a class can have multiple static blocks
+		- sequence
+			1. class is loaded in the memory by class loader
+			2. memory for static variables will be created
+			3. static blocks will be called automatically in the order in which they are written
+			4. whenever an object is creates memory for non-static variables is allocated
+			5. and then constructor is called
+			
+			Step 1,2,3 will take place only once. Step 4 and 5 will take place everytime an object is created
+		- question1 : can a static method access a static member? yes
+		- question2 : can a static method access a non static member? no
+		- question3 : can a non static method access a static member? yes
+		- question4 : can a non static method access a non static member? yes
+		
+	- synchronized
+		- synchronized can be used in front of
+			- method
+			- block
+	- native
+		- native can be used in front of
+			- method
+				- native methods are written in a language other than java mostly c/c++
+	- transient
+		- transient can be used in front of
+			- variables (instance variables)
+				- Emaaz Khot 18:34
+					to indicate that a member variable should not be serialized when the object is converted 
+					into a byte stream
+		
+23/04/2024
+----------
+Object class
+------------
+	- explored the methods
+	- reference equality
+	- content equality by oveririding equals method
+	
+24/04/2024
+-----------
+  -hashcode()
+	- hashcode for objects in java
+	- overriding hashcode method
+	- contract
+		- equal objects should have equal hashcode, which means that whenever we overide the equals methods we should overide the hascode method also
+		- but reverse need not be true : objects with equal hashcode necessarily need not be equal	
+			
+  -toString()
+  	- string representation of an object
+  - destructors in java	
+  	- we override the finalize method of the object class and it acts as the desctructor
+  
+ 25/04/2024
+ ----------
+ String
+ ------
+ 
+ 26/04/2024
+ ----------
+ StringBuffer and StringBuilder
+ 
+ 29/04/2024
+ ----------
+ 	- array in java
+ 		- array are treated as objects in java
+ 		- array takes memory in heap
+ 	- one dimensional array
+ 	- two dimensional array
+ 	- jagged/irregular dimensional array
+ 
+ 30/04/2024
+ -----------
+ 	- worked on array practise questions
+ 
+ 02/05/2024
+ ----------
+ 	- wrapper classes
+ 		- the 8 primitive data types in java have 8 equivalent Wrapper types
+ 			byte   	- Byte
+ 			short  	- Short
+ 			int  	- Integer
+ 			long	- Long
+ 			float	- Float
+ 			double	- Double
+ 			boolean	- Boolean
+ 			char	- Character
+ 		- the primitive types start with small letter whereas the Wrapper type is a class and hence starts with capital letter
+ 		- we cannot create an object for primitive type whereas Wrapper type is a class and hence we can create an Object fro Wrapper type
+ 				Eg: Float f1 = new Float(4.5f);
+ 		- Autoboxing ?		
+ 			- Sandhya Pulicharla 17:52
+				automatic conversion between primitive types and their wrapper classes
+					eg: int mark = 20;
+					    Integer myMark = mark; // with autoboxing : assigning a primitive to wrapper
+					    int allMark = myMark; // with autoboxing : assigning a wrapper to primitive
+					    Integer myMark = new Integer(mark); // without autoboxing 
+					    int allMarks = myMark.intValue(); // without autoboxing
+ 		- preferred : Wrapper type or primtive type?
+ 			- pritmive types take less memory than wrapper type, so primitive is preferred
+ 			- however if we want to perform some operations then we can go for the wrapper type
+ 		- String is considered as the universal datatype.
+ 			- so conversion between String and other data types are important
+ 			- Wrapper classes give us an option for the conversion
+ 				- eg : covert String to Integer
+ 					String str = "45";
+ 					Integer itr = Integer.parseInt(str);
+ 					int itr = Integer.parseInt(str); // can do this because of autoboxing
+ 				- eg: cpnvert Integer to String
+ 					Integer mark = 60;
+ 					String str = Integer.toString(mark);
+ 					String str = mark + "";
+ 	- demo on dynamic arrays in java

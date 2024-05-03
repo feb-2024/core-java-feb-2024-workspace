@@ -25,7 +25,11 @@ public class MyDynamicArrayDemo {
 		System.out.println("CAPACITY : " + mda.getCapacity());		
 		System.out.println(mda);
 		
-	
+		mda.remove(30);
+		
+		System.out.println("SIZE : " + mda.getSize());
+		System.out.println("CAPACITY : " + mda.getCapacity());		
+		System.out.println(mda);
 
 	}
 

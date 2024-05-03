@@ -1,0 +1,10 @@
+package functionalinterfacesandlambdas;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Operation add1 = new Addition();
+		System.out.println(add1.operate(4, 5));
+	}
+
+}

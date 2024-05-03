@@ -744,3 +744,20 @@ Object class
  					String str = Integer.toString(mark);
  					String str = mark + "";
  	- demo on dynamic arrays in java
+ 	
+ 03/05/2024
+ ----------
+ - completed remove item of dynamic array
+ - functional interfaces
+ 	Vinod Chandra 17:46
+		functional interfaces are the interfaces that have only 1 abstract method . 
+		they are called like that from java 8
+		before java 8 they are called single abstract method interfaces(SAM)
+	- eg: Runnable, Comparator
+	- @FunctionalInterface
+		- this interface is used above a functional interface to make sure it is a functional interface 
+ - ways of implementing functional interfaces
+ 	- there are 3 ways
+ 		1) Conventional way - create a class and implement the interface
+ 		2) Anonymous classes
+ 		3) Lambda expressions
