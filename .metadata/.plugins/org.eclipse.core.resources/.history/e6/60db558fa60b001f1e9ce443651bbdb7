@@ -761,17 +761,3 @@ Object class
  		1) Conventional way - create a class and implement the interface
  		2) Anonymous classes
  		3) Lambda expressions
- 		
- 06/05/2024
- -----------
- Generics in java
- 	- Ankit Raj 17:46
-		way to create classes, interfaces, and methods that operate on different types while providing compile-time type safety
-		meaning it can detect and prevent type errors at compile time rather than at runtime....
-	- we can only pass a class as generic type
-	- we cannot pass primitive data types
-Collections in java
-	- intro to collections
-	- collections vs array
-	- collection hierarchy diagram
-	

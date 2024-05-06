@@ -1,0 +1,10 @@
+package generics;
+
+public class Box {
+	private int length;
+	private int width;
+	private int height;
+	
+	
+	
+}

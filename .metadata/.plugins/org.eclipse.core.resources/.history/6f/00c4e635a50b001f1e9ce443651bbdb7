@@ -1,0 +1,15 @@
+package generics;
+//BoxGenerics class with generics
+public class BoxGenerics<T> {
+	private T length;
+	private T width;
+	private T height;
+	
+	public BoxGenerics(T length, T width, T height) {
+		this.length = length;
+		this.width = width;
+		this.height = height;
+	}
+	
+	
+}

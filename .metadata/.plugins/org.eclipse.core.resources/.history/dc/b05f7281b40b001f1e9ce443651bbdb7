@@ -770,8 +770,3 @@ Object class
 		meaning it can detect and prevent type errors at compile time rather than at runtime....
 	- we can only pass a class as generic type
 	- we cannot pass primitive data types
-Collections in java
-	- intro to collections
-	- collections vs array
-	- collection hierarchy diagram
-	

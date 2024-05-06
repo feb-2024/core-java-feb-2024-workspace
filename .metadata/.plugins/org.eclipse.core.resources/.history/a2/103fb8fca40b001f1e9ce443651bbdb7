@@ -1,0 +1,9 @@
+package generics;
+
+public class BoxGenerics<T> {
+	private T length;
+	private T width;
+	private T height;
+	
+	
+}
