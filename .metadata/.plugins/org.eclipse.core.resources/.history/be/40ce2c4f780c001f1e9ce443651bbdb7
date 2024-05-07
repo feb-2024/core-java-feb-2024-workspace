@@ -57,7 +57,7 @@ public class ArrayListDemo {
 		allFoods.forEach((item)->System.out.println(item));
 		System.out.println("---------------");
 		// D - Delete
-		// remove elements ending with "Chat" from the collection allFoods
+		// remove elements ending with "Chat"
 		// 1
 		for(int i=0;i<allFoods.size();i++) {
 			if(allFoods.get(i).endsWith("Chat")) {
