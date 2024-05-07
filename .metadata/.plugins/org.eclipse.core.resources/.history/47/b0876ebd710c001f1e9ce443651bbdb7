@@ -1,0 +1,17 @@
+package collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		//ArrayList<String> allFoods = new ArrayList<>(); // not recomended
+		
+		List<String> allFoods = new ArrayList<>(); // recomended way
+		allFoods = new LinkedList<>();
+		
+
+	}
+
+}
