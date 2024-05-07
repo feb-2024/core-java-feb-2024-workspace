@@ -11,7 +11,7 @@ public class ArrayListDemo {
 		//ArrayList<String> allFoods = new ArrayList<>(); // not recomended
 		
 		List<String> allFoods = new ArrayList<>(); // recomended way
-		//List<String> allFoods = new LinkedList<>();
+		//allFoods = new LinkedList<>();
 		
 		//CRUD - Create, Read, Update, Delete
 		// C - Create

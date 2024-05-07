@@ -11,7 +11,7 @@ public class ArrayListDemo {
 		//ArrayList<String> allFoods = new ArrayList<>(); // not recomended
 		
 		List<String> allFoods = new ArrayList<>(); // recomended way
-		//List<String> allFoods = new LinkedList<>();
+		//allFoods = new LinkedList<>();
 		
 		//CRUD - Create, Read, Update, Delete
 		// C - Create
@@ -21,7 +21,6 @@ public class ArrayListDemo {
 		allFoods.add("Pav Bhaji");
 		allFoods.add("Sev Puri");
 		allFoods.add("Samosa Chat");
-		allFoods.add("Bhel Puri");
 		
 		// R - Read
 		// traversing the collection
@@ -69,13 +68,11 @@ public class ArrayListDemo {
 //		allFoods.forEach((item)->System.out.println(item));
 		
 		// 2
-		allFoods.removeIf((item)->item.endsWith("Chat"));
-		allFoods.forEach((item)->System.out.println(item));
-		
-		System.out.println("---------------");
-		
-		allFoods.add(null);
-		allFoods.add(null);
+		for(String eachFood : allFoods) {
+			if(eachFood.endsWith("Chat")) {
+				allFoods.remove(eachFood);
+			}
+		}
 		allFoods.forEach((item)->System.out.println(item));
 	}
 }

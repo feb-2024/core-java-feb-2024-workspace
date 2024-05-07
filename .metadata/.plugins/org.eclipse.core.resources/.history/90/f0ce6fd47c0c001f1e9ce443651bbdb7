@@ -10,8 +10,8 @@ public class ArrayListDemo {
 	public static void main(String[] args) {
 		//ArrayList<String> allFoods = new ArrayList<>(); // not recomended
 		
-		List<String> allFoods = new ArrayList<>(); // recomended way
-		//List<String> allFoods = new LinkedList<>();
+		//List<String> allFoods = new ArrayList<>(); // recomended way
+		List<String> allFoods = new LinkedList<>();
 		
 		//CRUD - Create, Read, Update, Delete
 		// C - Create
