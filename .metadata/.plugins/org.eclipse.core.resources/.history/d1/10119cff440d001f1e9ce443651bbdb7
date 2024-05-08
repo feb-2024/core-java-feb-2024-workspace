@@ -1,0 +1,22 @@
+package collections;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TreeSetDemo {
+
+	public static void main(String[] args) {
+		SortedSet<String> allCountries = new TreeSet<>();
+		
+		allCountries.add("India");
+		allCountries.add("China");
+		allCountries.add("Sri Lanka");
+		allCountries.add("Nepal");
+		allCountries.add("Pakistan");
+		allCountries.add("Bangladesh");
+		allCountries.add("Myanmar");
+		
+		allCountries.forEach((eachCountry)-> System.out.println(eachCountry));
+	}
+
+}

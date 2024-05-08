@@ -1,0 +1,9 @@
+package collections;
+
+public class Room {
+	private int length;
+	private int height;
+	private int width;
+	
+	
+}
