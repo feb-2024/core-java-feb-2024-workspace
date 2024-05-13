@@ -2,7 +2,7 @@ package collections;
 
 import java.util.Objects;
 
-public class Room {
+public class Room implements Comparable<Room>{
 	private int length;
 	private int height;
 	private int width;
@@ -58,6 +58,13 @@ public class Room {
 	@Override
 	public String toString() {
 		return "Room [length=" + length + ", height=" + height + ", width=" + width + "]";
+	}
+
+	@Override
+	public int compareTo(Room o) {
+		int perimeter1 = 2 * (this.length + this.width);
+		int perimeter2 = 2 * (o.length + o.width);
+		return (perimeter1 - perimeter2);
 	}
 	
 }

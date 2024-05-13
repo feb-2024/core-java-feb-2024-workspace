@@ -1,0 +1,12 @@
+package collections;
+
+public class PriorityQueueDemo {
+
+	public static void main(String[] args) {
+		Queue<String> todoTasks = new PriorityQueue<>();
+		
+		
+
+	}
+
+}

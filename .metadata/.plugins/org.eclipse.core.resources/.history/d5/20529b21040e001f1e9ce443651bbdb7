@@ -1,0 +1,11 @@
+package collections;
+
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		Map<String, Integer> phoneBook = new HashMap<>();
+		
+
+	}
+
+}
