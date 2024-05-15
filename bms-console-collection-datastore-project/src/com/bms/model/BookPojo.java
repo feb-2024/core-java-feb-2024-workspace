@@ -1,14 +1,16 @@
 package com.bms.model;
 
+import java.util.Objects;
+
 public class BookPojo {
 	private int bookId;
 	private String bookTitle;
 	private String bookAuthor;
 	private String bookGenre;
-	private String bookPrice;
+	private int bookPrice;
 	private String bookImageUrl;
 	
-	public BookPojo(int bookId, String bookTitle, String bookAuthor, String bookGenre, String bookPrice,
+	public BookPojo(int bookId, String bookTitle, String bookAuthor, String bookGenre, int bookPrice,
 			String bookImageUrl) {
 		super();
 		this.bookId = bookId;
@@ -51,11 +53,11 @@ public class BookPojo {
 		this.bookGenre = bookGenre;
 	}
 
-	public String getBookPrice() {
+	public int getBookPrice() {
 		return bookPrice;
 	}
 
-	public void setBookPrice(String bookPrice) {
+	public void setBookPrice(int bookPrice) {
 		this.bookPrice = bookPrice;
 	}
 
@@ -68,8 +70,26 @@ public class BookPojo {
 	}
 
 	@Override
+	public int hashCode() {
+		return Objects.hash(bookId);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		BookPojo other = (BookPojo) obj;
+		return bookId == other.bookId;
+	}
+
+	@Override
 	public String toString() {
 		return "BookPojo [bookId=" + bookId + ", bookTitle=" + bookTitle + ", bookAuthor=" + bookAuthor + ", bookGenre="
 				+ bookGenre + ", bookPrice=" + bookPrice + ", bookImageUrl=" + bookImageUrl + "]";
 	}
+	
 }
