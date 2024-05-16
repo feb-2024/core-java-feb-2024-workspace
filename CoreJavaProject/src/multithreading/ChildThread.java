@@ -18,5 +18,6 @@ public class ChildThread extends Thread{
 				e.printStackTrace();
 			}
 		}
+		System.out.println(getName() + " : Completed...");
 	}
 }

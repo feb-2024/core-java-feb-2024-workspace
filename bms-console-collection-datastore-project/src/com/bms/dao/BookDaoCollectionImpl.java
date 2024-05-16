@@ -49,19 +49,26 @@ public class BookDaoCollectionImpl implements BookDao{
 
 	@Override
 	public BookPojo addBook(BookPojo newBook) {
-		// TODO Auto-generated method stub
-		return null;
+		int maxBookId = 0;
+		for(BookPojo eachBook : bookDataStore) {
+			if(eachBook.getBookId() > maxBookId) {
+				maxBookId = eachBook.getBookId();
+			}
+		}
+		newBook.setBookId(maxBookId + 1);
+		bookDataStore.add(newBook);
+		return newBook;
 	}
 
 	@Override
 	public BookPojo updateBook(BookPojo editBook) {
-		// TODO Auto-generated method stub
-		return null;
+		deleteBook(editBook.getBookId());
+		bookDataStore.add(editBook);
+		return editBook;
 	}
 
 	@Override
 	public void deleteBook(int bookId) {
 		bookDataStore.removeIf((eachBook) -> eachBook.getBookId() == bookId);
 	}
-
 }

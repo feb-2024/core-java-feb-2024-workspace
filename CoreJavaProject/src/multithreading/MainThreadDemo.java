@@ -24,6 +24,9 @@ public class MainThreadDemo {
 		ChildThread child2 = new ChildThread("Child Two");
 		child2.start();
 		
+		ChildRunnable child3 = new ChildRunnable("Child Three");
+		child3.t.start();
+		
 		for(int i=1;i<=5;i++) {
 			System.out.println(th.getName() + " : " + i);
 			try {
@@ -34,6 +37,16 @@ public class MainThreadDemo {
 			}
 		}
 		
+		try {
+			child1.join();
+			child2.join();
+			child3.t.join();
+
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(th.getName() + " : Completed...");
 	}
 
 }
