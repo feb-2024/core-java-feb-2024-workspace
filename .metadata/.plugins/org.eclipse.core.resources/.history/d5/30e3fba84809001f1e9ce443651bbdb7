@@ -1,6 +1,0 @@
-package functionalinterfacesandlambdas;
-
-@FunctionalInterface
-public interface Operation {
-
-}

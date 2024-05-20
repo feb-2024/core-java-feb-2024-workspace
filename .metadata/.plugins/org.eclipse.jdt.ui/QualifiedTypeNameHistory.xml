@@ -3,5 +3,11 @@
     <fullyQualifiedTypeName name="encapsulation.driverpool.CarDriver"/>
     <fullyQualifiedTypeName name="encapsulation.maruthi.MaruthiSwift"/>
     <fullyQualifiedTypeName name="abstraction.SafetyGuidelines2021"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="multithreading.ChildRunnable"/>
+    <fullyQualifiedTypeName name="multithreading.ChildPriority"/>
+    <fullyQualifiedTypeName name="com.bms.service.BookServiceImpl"/>
+    <fullyQualifiedTypeName name="com.bms.dao.BookDao"/>
+    <fullyQualifiedTypeName name="com.bms.dao.BookDaoCollectionImpl"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

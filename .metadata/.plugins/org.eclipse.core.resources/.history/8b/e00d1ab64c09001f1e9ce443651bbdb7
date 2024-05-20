@@ -1,5 +1,0 @@
-package functionalinterfacesandlambdas;
-
-public class Addition implements Operation{
-
-}
