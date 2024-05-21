@@ -88,7 +88,7 @@ public class BookPojo {
 
 	@Override
 	public String toString() {
-		return "BookPojo [bookId=" + bookId + ", bookTitle=" + bookTitle + ", bookAuthor=" + bookAuthor + ", bookGenre="
+		return "[bookId=" + bookId + ", bookTitle=" + bookTitle + ", bookAuthor=" + bookAuthor + ", bookGenre="
 				+ bookGenre + ", bookPrice=" + bookPrice + ", bookImageUrl=" + bookImageUrl + "]";
 	}
 	
