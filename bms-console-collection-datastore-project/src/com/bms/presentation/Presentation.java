@@ -70,12 +70,43 @@ public class Presentation {
 
 					break;
 				case 4:
+					scan.nextLine();
+					System.out.println("Enter Book Title : ");
+					String bookTitle = scan.nextLine();
+					System.out.println("Enter Book Author : ");
+					String bookAuthor = scan.nextLine();
+					System.out.println("Enter Book Genre : ");
+					String booksGenre = scan.nextLine();
+					System.out.println("Enter Book Price : ");
+					int bookPrice = scan.nextInt();
+					
+					BookPojo newBook = new BookPojo(0, bookTitle, bookAuthor, booksGenre, bookPrice, "");
+					
+					BookPojo addedBook = bookService.addBook(newBook);
+					System.out.println("**************************************");
+					System.out.println("New book added with ID : " + addedBook.getBookId());
+					System.out.println("**************************************");
 					
 					break;
 				case 5:
-					
+					//1. ask user to enter the book id to be fetched
+					//2. fetch the book with the id 
+					//3. display the fetched book information
+					//4. ask user to enter the new book price
+					//5. set that book price in the fetched book object
+					//6. using bookService call updateBook() and pass the object
 					break;
 				case 6:
+					System.out.println("Enter Book ID to delete : ");
+					int deleteBookId = scan.nextInt();
+					BookPojo deleteBook = bookService.fetchABook(deleteBookId);
+					System.out.println(deleteBook);
+					System.out.println("Are you sure to remove this book (y/n) ? ");
+					char sure = scan.next().charAt(0);
+					if(sure == 'y' || sure == 'Y') {
+						bookService.deleteBook(deleteBookId);
+						System.out.println("Book successfully removed!!");
+					}
 					
 					break;
 				case 7:
