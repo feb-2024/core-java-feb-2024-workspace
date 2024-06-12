@@ -6,8 +6,20 @@
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="multithreading.ChildRunnable"/>
     <fullyQualifiedTypeName name="multithreading.ChildPriority"/>
-    <fullyQualifiedTypeName name="com.bms.service.BookServiceImpl"/>
     <fullyQualifiedTypeName name="com.bms.dao.BookDao"/>
     <fullyQualifiedTypeName name="com.bms.dao.BookDaoCollectionImpl"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.bms.presentation.Presentation"/>
+    <fullyQualifiedTypeName name="com.bms.service.BookServiceImpl"/>
+    <fullyQualifiedTypeName name="com.bms.model.BookPojo"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
 </qualifiedTypeNameHistroy>
