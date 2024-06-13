@@ -1,12 +1,15 @@
 import java.sql.Connection;
+import java.sql.Date;
+import java.time.LocalDate;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class InsertDemo {
+public class SelectDemo {
 
 	public static void main(String[] args) {
-		// Step 1 : Load the driver // not required in newer versions of java
+		// Step 1: Load the driver
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("Driver loaded...");
@@ -14,7 +17,6 @@ public class InsertDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		
 		Connection conn = null;
 		Statement stmt = null;
@@ -28,11 +30,23 @@ public class InsertDemo {
 			
 			// Step 3 : Create a statement and execute it
 			stmt = conn.createStatement();
-			String insertQuery = "INSERT INTO person_details(person_id, person_firstname, person_lastname, person_dob, person_mobile_no, person_city) \r\n"
-					+ "	VALUES (110, 'Sandra', 'Bullock', '1980-04-04', 1565664564, 'Chicago')";
-			int rowsAffected = stmt.executeUpdate(insertQuery);
-			System.out.println(rowsAffected + " rows affected...");
-			
+			String selectQuery = "SELECT * FROM person_details";
+			ResultSet rs = stmt.executeQuery(selectQuery);
+			while(rs.next()) {
+				int pId = rs.getInt(1);
+				String firstName = rs.getString(2);
+				String lastName = rs.getString(3);
+				Date dob = rs.getDate(4);
+				Long mobile = rs.getLong(5);
+				String city = rs.getString(6);
+				System.out.println("ID : " + pId);
+				System.out.println("First Name : " + firstName);
+				System.out.println("Last Name : " + lastName);
+				System.out.println("DOB : " + dob);
+				System.out.println("Mobile : " + mobile);
+				System.out.println("City : " + city);
+				System.out.println("==============================");
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -45,10 +59,10 @@ public class InsertDemo {
 				e.printStackTrace();
 			}
 		}
-		
-		// Step 4 : handle the exception
-		
 
+		// Step 4: handle the exceptions
+		
+		
 	}
 
 }
