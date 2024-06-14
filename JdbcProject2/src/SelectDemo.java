@@ -7,7 +7,23 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class SelectDemo {
-
+	// types of execute method
+	// ------------------------
+	// boolean result = stmt.execute(query); // used for DDL queries
+	// int rowsAffected = stmt.executeUpdate(query); // used for DML queries
+	// ResultSet rs = stmt.executeQuery(query); // used for DQL query
+	
+	// types of Statements
+	// --------------------
+	// 1. Statement
+	// 2. PreparedStatement
+	// 			- they are precompiled statements
+	//			- compiled once and executed many times
+	// 3. CallableStatement
+	//			- used to execute stored procedures
+	// 			- used to call a stored procedure and not to create the stored procedure
+	//			- if you want to create the stored procedure use mysql workbench or Statement or PreparedStatement
+	
 	public static void main(String[] args) {
 		// Step 1: Load the driver
 		try {
