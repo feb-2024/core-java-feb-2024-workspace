@@ -95,19 +95,34 @@ public class Presentation {
 					//4. ask user to enter the new book price
 					//5. set that book price in the fetched book object
 					//6. using bookService call updateBook() and pass the object
+					//1
+					System.out.println("Enter Book ID to edit : ");
+					int editBookId = scan.nextInt();
+					BookPojo editBook = bookService.fetchABook(editBookId);
+					if(editBook != null) {
+						System.out.println(editBook);
+						System.out.println("Please enter updated price : ");
+						int price = scan.nextInt();
+						editBook.setBookPrice(price);
+						bookService.updateBook(editBook);
+						System.out.println("Book price successfully updated!!");
+					}	
 					break;
 				case 6:
 					System.out.println("Enter Book ID to delete : ");
 					int deleteBookId = scan.nextInt();
 					BookPojo deleteBook = bookService.fetchABook(deleteBookId);
-					System.out.println(deleteBook);
-					System.out.println("Are you sure to remove this book (y/n) ? ");
-					char sure = scan.next().charAt(0);
-					if(sure == 'y' || sure == 'Y') {
-						bookService.deleteBook(deleteBookId);
-						System.out.println("Book successfully removed!!");
+					if(deleteBook != null) {
+						System.out.println(deleteBook);
+						System.out.println("Are you sure to remove this book (y/n) ? ");
+						char sure = scan.next().charAt(0);
+						if(sure == 'y' || sure == 'Y') {
+							bookService.deleteBook(deleteBookId);
+							System.out.println("Book successfully removed!!");
+						}	
+					}else {
+						System.out.println("Sorry! Book with ID : " + deleteBookId + " does not exist!");
 					}
-					
 					break;
 				case 7:
 					System.out.println("**************************************");
