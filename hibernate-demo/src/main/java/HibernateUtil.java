@@ -3,7 +3,9 @@ import java.util.Properties;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
-// this class is for configuring hibernate with connection url, username, password
+// this class is for configuring hibernate
+// we provide the connection url, username, password
+// we return the SessionFactory
 public class HibernateUtil {
 	static SessionFactory sessionFactory;
 	static {
