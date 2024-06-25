@@ -5,12 +5,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name="employee")
+@Entity //mandatory
+@Table(name="employee") // optional when the entitiy class name and table name are the same 
+						// always recomended to use it even if the names are the same
 public class EmployeeEntity {
 	
-	@Id
-	@Column(name="emp_id")
+	@Id						// mandatory
+	@Column(name="emp_id")// optional when the column name and variable name are the same
+						  // 	always recomended to use it even if the names are the same
 	private int empId;
 	
 	@Column(name="emp_name")

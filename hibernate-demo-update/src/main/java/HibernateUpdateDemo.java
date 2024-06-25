@@ -21,12 +21,13 @@ public class HibernateUpdateDemo {
 		// first: fetch the employee to updated with id
 		System.out.println("Going to fethc employee with id 106...");
 		EmployeeEntity fetchedEntity = session.get(EmployeeEntity.class, 106);
-		
+		System.out.println("fetchedEntity : " + fetchedEntity);
+				
 		// second: change the value in the enityt object and update the object
 		System.out.println("Going to set employee contact...");
-		fetchedEntity.setEmpContact("1234522222");
-		System.out.println("Going to update the entity object...");
-		session.merge(fetchedEntity);
+		fetchedEntity.setEmpContact("1234500000");
+		//System.out.println("Going to update the entity object...");
+		//session.merge(fetchedEntity); // not required
 		
 		// 5. Transaction commit
 		System.out.println("Going to commit the transaction...");
