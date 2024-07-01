@@ -3,6 +3,7 @@ import java.util.Objects;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -18,7 +19,7 @@ public class DepartmentEntity {
 	@Column(name="dept_name")
 	private String departmentName;
 	
-	@OneToMany(mappedBy="deptEntity")
+	@OneToMany(mappedBy="deptEntity", fetch = FetchType.EAGER)
 	private List<EmployeeEntity> allEmp;
 
 	public DepartmentEntity() {}
